@@ -1,0 +1,96 @@
+{
+    "admin":[
+        {
+            "id" : 1,
+            "tenadmin":"admin",
+            "password":"admin"
+        }
+    ],
+    "users": [
+      { "id": 1, 
+        "name": "khang", 
+        "email": "nguyenkhang@gmail.com",
+        "phone" : "0937264599",
+        "diachi" : "06 Đào Nguyên Phổ , TP-Đà Nẵng",
+        "password": "123456",
+        "re-pass": "123456" },
+      { "id": 2, 
+        "name": "abc", 
+        "email": "abc@gmail.com",
+        "phone" : "0937264599",
+        "diachi" : "06 Đào Nguyên Phổ , TP-Đà Nẵng",
+        "password": "123456",
+        "re-pass": "123456" }
+
+    ],
+    "loaisp": [
+        { "id": 1, 
+        "tenloai": "Iphone",
+        "tinhtrang":true },
+        {
+            "id" :2,
+            "tenloai":"SamSung",
+            "tinhtrang":false
+        }
+    ],
+    "sanpham": [
+        {
+            "id": 1,
+            "tensp" : "Iphone 6 plus",
+            "soluong" : 10,
+            "giadexuat":10000,
+            "giamgia" : 10,
+            "gia": 9000,
+            "loaispId": 1,
+            "hinhanh": "http://placehold.it/300x300",
+            "tinhtrang" : true,
+            "noidung" : "abc"
+        },
+        {
+            "id": 2,
+            "tensp" : "SamSung Galaxy",
+            "soluong" : 10,
+            "giadexuat":10000,
+            "giamgia" : 10,
+            "gia": 9000,
+            "loaispId": 2,
+            "hinhanh": "http://placehold.it/300x300",
+            "tinhtrang" : false,
+            "noidung" : "abc"
+        }
+    ],
+    "giohang" : [
+        {
+            "id" : 1,
+            "userId":1,
+            "userName" : "khang",
+            "diachinhan" : "06 Đào Nguyên Phổ , TP-Đà Nẵng",
+            "ngaytao" : "2019-11-22",
+            "tinhtrang":false
+        },
+        {
+            "id" : 2,
+            "userId":2,
+            "userName" : "abc",
+            "diachinhan" : "06 Đào Nguyên Phổ , TP-Đà Nẵng",
+            "ngaytao" : "2019-11-22",
+            "tinhtrang":true
+        }
+    ],
+    "thanhtoan" : [
+        {
+            "id" : 1,
+            "giohangId":1,
+            "sanphamId":1,
+            "tongtien":9000,
+            "soluong":1
+        },
+        {
+            "id" : 2,
+            "giohangId":2,
+            "sanphamId":2,
+            "tongtien":9000,
+            "soluong":1
+        }
+    ]
+  }
