@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #e3e3e3;
+	margin: 100px auto;
+	width: 400px;
+}
+
+form{
+	border: 1.5px solid #A5A4A4;
+	border-radius: 5px;
+	width: 360px;
+	padding: 50px 20px;
+	background: white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+form h2{
+	padding-bottom: 25px;
+	font-weight: normal;
+	color:black;
+	font-size: 18px;
+	color: blue;
+	font-family: Florence, cursive;
+}
+
+form .login-box input{
+	width: 350px;
+	height: 30px;
+	opacity: 0.5;
+	padding-left:10px;
+	margin-bottom: 40px;
+}
+
+form .clearfix button{
+	float: right;
+	width: 100px;
+	height: 30px;
+	background: #578EBE;
+	border: 1px solid #578EBE;
+	color: white;
+}
+
+form .clearfix button:hover{
+	line-height: 31px;
+	cursor: pointer;
+}
+
+form .clearfix{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+form h3{
+	opacity: 0.7;
+	font-size: 14px;
+	padding-top: 20px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+form p{
+	font-size: 17px;
+}
+
+form a{
+	color: blue;
+	text-decoration: none;
+}
+
+form a:hover{
+	color: red;
+	text-decoration: underline;
+}
