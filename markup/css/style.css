@@ -24,13 +24,14 @@ header ul{
 	list-style: none;
 	display: flex;
 	padding-left: 150px;
+	float: left;
 }
 
 header nav ul li{
 	line-height: 35px;
 	padding-left: 20px;
-
 }
+
 
 header nav ul li a{
 	border-right: 1px solid white;
@@ -49,13 +50,26 @@ header nav ul li a:hover{
 	transition: 0.3s;
 }
 
+header nav .login_register{
+	float: right;
+	margin-right: 100px;
+}
+
+#header-content{
+	border: 1.5px solid #A5A4A4;
+	border-radius: 5px;
+	padding: 20px 20px;
+	background: white;
+}
+
 #header-content img{
 	margin: 20px 0 0 150px;
 	float: left;
 	margin-right: 80px;
+	clear: both;
 }
 
-#header-content input{
+#header-content form input{
 	border:1px solid #a8cf45;
 	border-radius: 2px;
 	width: 250px;
@@ -70,7 +84,7 @@ header nav ul li a:hover{
 	width: 90px;
 	height: 33px;
 	position: absolute;
-	top:8%;
+	top:10.5%;
 	border-radius: 2px;
 	background: #F89999;
 	border:1px solid #a8cf45;
@@ -83,10 +97,6 @@ header nav ul li a:hover{
 	transition: 0.3s;
 }
 
-#header-content #banner img{
-	width: 1250px;
-	height: 550px;
-}
 
 #content{
 	clear: both;
@@ -349,4 +359,82 @@ footer #footer-bottom{
 	line-height: 40px;
 	color: #F2EEEE;
 	font-size: 14px;
+}
+
+#form_register{
+	width: 500px;
+	margin: 47px auto;
+	border: 1px solid #a8cf45;
+	background: #fff;
+	padding: 40px;
+}
+
+#form_register h2{
+	text-align: center;
+	padding-bottom: 20px;
+	color: red;
+}
+
+#form_register .clearfix button{
+	width: 100px;
+	height: 30px;
+	background: #578EBE;
+	border: 1px solid #578EBE;
+	color: white;
+}
+
+#form_register .clearfix button:hover{
+	line-height: 31px;
+	cursor: pointer;
+}
+
+#form_register label{
+	width: 180px;
+	text-align: right;
+	float: left;
+	margin-right: 20px;
+}
+
+#form_register input{
+	margin-bottom: 10px;
+	height: 25px;
+}
+
+#form_login h2{
+	text-align: center;
+	padding-bottom: 20px;
+	color: red;
+}
+
+#form_login{
+	width: 500px;
+	margin: 67px auto;
+	border: 1px solid #a8cf45;
+	background: #fff;
+	padding: 40px;
+}
+
+#form_login .clearfix button{
+	width: 100px;
+	height: 30px;
+	background: #578EBE;
+	border: 1px solid #578EBE;
+	color: white;
+}
+
+#form_login .clearfix button:hover{
+	line-height: 31px;
+	cursor: pointer;
+}
+
+#form_login label{
+	width: 180px;
+	text-align: right;
+	float: left;
+	margin-right: 20px;
+}
+
+#form_login input{
+	margin-bottom: 10px;
+	height: 25px;
 }
