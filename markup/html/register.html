@@ -1,25 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vn">
 <head>
 	<meta charset="UTF-8">
-	<title>Register</title>
+	<title>Điện thoại smartphone giá rẻ chính hãng giá tốt</title>
 	<link rel="shortcut icon" href="../css/favicon.jpg"/>
-	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<form action="">
-		<label for="user_name">Tên tài khoản:</label>
-		<input type="text" id="user_name" placeholder="Nhập tên tài khoản"></br>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">Trang chủ</a></li>
+				<li><a href="">Sản phẩm</a></li>
+				<li><a href="">Tin tức</a></li>
+				<li><a href="">Giới thiệu</a></li>
+				<li><a href="" style="border: none">Liên hệ</a></li>
+			</ul>
+		</nav>
+	</header>
 
-		<label for="pass">Mật khẩu</label>
-		<input type="text" id="password" placeholder="Nhập mật khẩu"></br>
+	<section id="header-content">
+		<a href=""><img src="../css/nova.png" alt="nova-logo"></a>
+		<form>
+			<input type="text" placeholder="Tìm kiếm...">
+			<button type="button" id="search">Tìm kiếm</button>
+		</form>
+	</section>
+	
+	<div id="form_register">
+		<h2>Đăng ký tài khoản</h2>
+		<form action="">
 
-		<label for="re_password">Nhập lại mật khẩu</label>
-		<input type="text" id="re_password" placeholder="Nhập lại mật khẩu"></br>
+			<label for="user_name">Tên tài khoản:</label>
+			<input type="text" id="user_name" placeholder="Nhập tên tài khoản"></br>
 
-		<div class="clearfix">
-			<label>&nbsp;</label><button type="submit" id="btn">Hoàn tất
+			<label for="pass">Mật khẩu:</label>
+			<input type="text" id="password" placeholder="Nhập mật khẩu"></br>
+
+			<label for="re_password">Nhập lại mật khẩu:</label>
+			<input type="text" id="re_password" placeholder="Nhập lại mật khẩu"></br>
+
+			<div class="clearfix">
+				<label>&nbsp;</label><button type="submit" id="btn">Hoàn tất
+			</div>
+		</form>
+	</div>
+
+	<footer>
+		<div id="footer-content">
+			<li>
+				<h2>CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ BẢO KHANG</h2>
+				<p>Địa chỉ: 79 Quang Trung, Quận Hải Châu, TP.Đà Nẵng</p>
+				<p>SĐT: 0123456789</p>
+				<p>Email: abc@gmail.com</p>
+				<p>http://www.abc.com</p>
+			</li>
+
+			<li>
+				<h2>HỖ TRỢ KHÁCH HÀNG</h2>
+				<a href=""><p>Quy định đổi trả</p></a>
+				<a href=""><p>Quy định giao hàng</p></a>
+				<a href=""><p>Hình thức thanh toán</p></a>
+				<a href=""><p>Quy định bảo hành</p></a>
+			</li>
+
+			<li>
+				<h2>THÔNG TIN</h2>
+				<a href=""><p>Về chúng tôi</p></a>
+				<a href=""><p>Tuyển dụng</p></a>
+				<a href=""><p>Liên hệ</p></a>
+				<a href=""><p>Trợ giúp</p></a>
+			</li>
 		</div>
-	</form>
+
+		<div id="footer-bottom">
+			<p>Copyright &copy; 2017 by Bảo Khang. All right reserved.</p>
+		</div>
+	</footer>
 </body>
 </html>

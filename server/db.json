@@ -14,6 +14,7 @@
         "diachi" : "06 Đào Nguyên Phổ , TP-Đà Nẵng",
         "password": "123456",
         "re-pass": "123456" },
+      
       { "id": 2, 
         "name": "abc", 
         "email": "abc@gmail.com",
@@ -33,6 +34,7 @@
             "tinhtrang":false
         }
     ],
+    
     "sanpham": [
         {
             "id": 1,
@@ -42,7 +44,7 @@
             "giamgia" : 10,
             "gia": 9000,
             "loaispId": 1,
-            "hinhanh": "http://placehold.it/300x300",
+            "hinhanh": 1,
             "tinhtrang" : true,
             "noidung" : "abc"
         },
@@ -56,6 +58,18 @@
             "loaispId": 2,
             "hinhanh": "http://placehold.it/300x300",
             "tinhtrang" : false,
+            "noidung" : "abc"
+        },
+        {
+            "id": 3,
+            "tensp" : "Iphone 6 plus",
+            "soluong" : 10,
+            "giadexuat":10000,
+            "giamgia" : 10,
+            "gia": 9000,
+            "loaispId": 1,
+            "hinhanh": "http://placehold.it/300x300",
+            "tinhtrang" : true,
             "noidung" : "abc"
         }
     ],

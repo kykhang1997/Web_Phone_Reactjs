@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chỉnh sửa sản phẩm</title>
+	<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+	<header>
+		<h3><a href="">BK SHOP</a></h3>
+		<div class="log_out">
+			<a href="">Đăng xuất</a>
+		</div>
+	</header>
+
+	<main>
+		<aside>
+			<ul>
+				<li><a href="admin.html">Trang chủ Admin</a></li>
+				<li><a href="product.html" class="active_product">Sản phẩm</a></li>
+				<li><a href="product_type.html">Loại sản phẩm</a></li>
+				<li><a href="user.html">User</a></li>
+				<li><a href="">Giỏ hàng</a></li>
+				<li><a href="">Thanh toán</a></li>
+			</ul>
+		</aside>
+
+		<div id="content">
+			<table id="edit_product" border="1" cellspacing="0">
+				<tr>
+					<th colspan="2">Thêm sản phẩm</th>
+				</tr>
+
+				<tr>
+					<td>Tên sản phẩm</td>
+					<td><input type="text" id="add_product"></td>
+				</tr>
+
+				<tr>
+					<td>Mã sản phẩm</td>
+					<td><input type="text" id="add_code_product"></td>
+				</tr>
+
+				<tr>
+					<td>Hình ảnh</td>
+					<td>
+						<input type="file" name="" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Giá đề xuất</td>
+					<td><input type="text" id="price"></td>
+				</tr>
+
+				<tr>
+					<td>Giá giảm</td>
+					<td><input type="text" id="sale"></td>
+				</tr>
+
+				<tr>
+					<td>Nội dung</td>
+					<td><textarea id="content" cols="30" rows="10"></textarea></td>
+				</tr>
+
+				<tr>
+					<td>Số lượng</td>
+					<td>
+						<button>-</button>
+						<input type="text" value="1" style="width: 10px">
+						<button>+</button>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Tên nhà sx</td>
+					<td>
+						<form action="">
+							<select id="producer">
+								<option value="oppo">Oppo</option>
+								<option value="iphone">Iphone</option>
+								<option value="samsung">Samsung</option>
+								<option value="nokia">Nokia</option>
+							</select>
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Tình trạng</td>
+					<td>
+						<form action="">
+							<input type="checkbox" value="active_product" id="active_product" checked>Kích hoạt
+							<input type="checkbox" value="not_active_product" id="not_active_product">Không kích hoạt
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<form action="">
+						<td colspan="2"><input type="button" id="add_products" value="Thêm"></td>
+					</form>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>

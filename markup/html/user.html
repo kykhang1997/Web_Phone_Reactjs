@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang User</title>
+	<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+	<header>
+		<h3><a href="">BK SHOP</a></h3>
+		<div class="log_out">
+			<a href="">Đăng xuất</a>
+		</div>
+	</header>
+
+	<main>
+		<aside>
+			<ul>
+				<li><a href="admin.html">Trang chủ Admin</a></li>
+				<li><a href="product.html">Sản phẩm</a></li>
+				<li><a href="product_type.html">Loại sản phẩm</a></li>
+				<li><a href="user.html" class="active_user">User</a></li>
+				<li><a href="cart.html">Giỏ hàng</a></li>
+				<li><a href="">Thanh toán</a></li>
+			</ul>
+		</aside>
+
+		<div id="content">
+			<table id="user" border="1" cellspacing="0">
+				<tr>
+					<th>ID</th>
+					<td>
+						<form action="">
+							<input type="text" id="add_id">
+						</form>
+					</td>
+					
+				</tr>
+
+				<tr>
+					<th>Tên</th>
+					<td>
+						<form action="">
+							<input type="text" id="add_name">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Email</th>
+					<td><form action="">
+							<input type="text" id="add_email">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Địa chỉ</th>
+					<td>
+						<form action="">
+							<input type="text" id="add_address">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>SĐT</th>
+					<td>
+						<form action="">
+							<input type="text" id="add_phone">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Mật khẩu</th>
+					<td>
+						<form action="">
+							<input type="text" id="add_pass">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Nhập lại mật khẩu</th>
+					<td>
+						<form action="">
+							<input type="text" id="add_re_pass">
+						</form>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						<form action="">
+							<input type="button" id="ok" value="Hoàn tất">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>

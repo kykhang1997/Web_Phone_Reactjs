@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chỉnh sửa sản phẩm</title>
+	<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+	<header>
+		<h3><a href="">BK SHOP</a></h3>
+		<div class="log_out">
+			<a href="">Đăng xuất</a>
+		</div>
+	</header>
+
+	<main>
+		<aside>
+			<ul>
+				<li><a href="admin.html">Trang chủ Admin</a></li>
+				<li><a href="product.html">Sản phẩm</a></li>
+				<li><a href="product_type.html" class="active_product_type">Loại sản phẩm</a></li>
+				<li><a href="user.html">User</a></li>
+				<li><a href="">Giỏ hàng</a></li>
+				<li><a href="">Thanh toán</a></li>
+			</ul>
+		</aside>
+
+		<div id="content">
+			<table id="edit_product" border="1" cellspacing="0">
+				<tr>
+					<th colspan="2">Thêmcloại sản phẩm</th>
+				</tr>
+
+				<tr>
+					<td>Tên loại sản phẩm</td>
+					<td><input type="text" id="add_product"></td>
+				</tr>
+
+				<tr>
+					<td>Tình trạng</td>
+					<td>
+						<form action="">
+							<input type="checkbox" value="active_product" id="active_product" checked>Kích hoạt
+							<input type="checkbox" value="not_active_product" id="not_active_product">Không kích hoạt
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<form action="">
+						<td colspan="2"><input type="button" id="add_products" value="Thêm"></td>
+					</form>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>	

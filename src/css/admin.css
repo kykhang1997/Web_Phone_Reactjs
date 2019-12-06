@@ -1,0 +1,317 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: serif;
+}
+
+header{
+	background: black;
+	height: 40px;
+	line-height: 40px;
+}
+
+header h3{
+	font-weight: normal;
+	padding-left: 40px;
+	float: left;
+}
+
+header a{
+	color: #D9D8D8;
+	text-decoration: none;
+	display: block;
+}
+
+header .log_out a{
+	float: right;
+	color: #D9D8D8;
+	text-decoration: none;
+	padding-right: 40px;
+	color: #D9D8D8;
+}
+
+header .log_out a:hover{
+	color: red;
+}
+
+main{
+	
+}
+
+main aside{
+	width: 250px;
+	background:#615F5F;
+	height: 600px;
+	float: left;
+}
+
+main aside ul{
+	list-style: none;
+}
+
+main aside ul li{
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 10px;
+	padding: 20px;
+}
+
+main aside ul li a{
+	color: #EAEAEA;
+	text-decoration: none;
+	display: block;
+	/* background: url(../css/dashboard.png) no-repeat; */
+	background-size: 20px 20px;
+	text-indent: 30px;
+}
+
+main aside ul li a:hover{
+	color: red;
+}
+
+main aside ul li a.active{
+	color: red;
+}
+
+main #content{
+	width: 100%;
+	background: #fff;
+	padding-top: 20px;
+}
+
+
+main #content #items1{
+	display: flex;
+    justify-content: space-around;
+}
+
+main #content .item{
+	border: 1px solid black;
+	width: 250px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	background: #ccc;
+}
+
+main #content #items2{
+	display: flex;
+    justify-content: space-around;
+}
+
+main #content #items2 #item_left{
+	width: 800px;
+	height: 200px;
+	background: #66BFF0;
+	margin-top: 20px;
+}
+
+main #content #items2 #item_right{
+	width: 350px;
+	height: 200px;
+	background: #f86c6b;;
+	margin-top: 20px;
+}
+
+main #content #card{
+	display: flex;
+	justify-content: space-around;
+}
+
+main #content #card #card_1{
+	background: #6610f2;
+	width: 250px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+main #content #card #card_2{
+	background: #6f42c1;;
+	width: 250px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+main #content #card #card_3{
+	background: #e83e8c;;
+	width: 250px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+main #content #card #card_4{
+	background: #f86c6b;
+	width: 250px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+main aside .active_product{
+	color: red;
+}
+
+main aside .active_product_type{
+	color: red;
+}
+
+main aside .active_user{
+	color: red;
+}
+
+main aside .active_cart{
+	color: red;
+}
+
+main aside .active_pay{
+	color: red;
+}
+
+main #content #form_search{
+	text-indent: 20px;
+}
+
+main #content #product{
+	text-align: center;
+	padding: 20px;
+	border: none;
+}
+
+main #content #product td{
+	padding: 10px;
+	width: 200px;
+}
+
+main #content #product a{
+	color: blue;
+	text-decoration: none;
+}
+
+main #content #product a:hover{
+	color: red;
+}
+
+main #content #edit_product{
+	margin: 40px auto;
+}
+
+main #content #add_product{
+	width: 290px;
+}
+
+main #content #edit_product td{
+	padding: 10px;
+	width: 300px;
+}
+
+main #content #edit_product input{
+	margin: 5px;
+}
+
+main #content #edit_product #add_products{
+	width: 100px;
+	margin-left: 260px;
+	height: 30px;
+}
+
+main #content #edit_product #add_products:hover{
+	color: red;
+	transition: 0.3s;
+}
+
+main #content #user{
+	border: none;
+	padding: 20px 30px;
+}
+
+main #content #user td{
+	width: 300px;
+	padding: 20px;
+}
+
+main #content #user th{
+	text-align: right;
+	width: 128px;
+	padding-right: 10px;
+}
+
+main #content #user input{
+	width: 300px;
+	height: 25px;
+}
+
+main #content #user #ok{
+	height: 30px;
+	margin-left: 77px;
+	color: blue;
+}
+
+main #content #user #ok:hover{
+	color: red;
+	cursor: pointer;
+}
+
+main #content #cart{
+	border: none;
+	padding: 20px 30px;
+}
+
+main #content #cart td{
+	width: 300px;
+	padding: 20px;
+}
+
+main #content #cart th{
+	text-align: right;
+	width: 128px;
+	padding-right: 10px;
+}
+
+main #content #cart input{
+	width: 300px;
+	height: 25px;
+}
+
+main #content #cart #ok{
+	height: 30px;
+	margin-left: 77px;
+	color: blue;
+}
+
+main #content #cart #ok:hover{
+	color: red;
+	cursor: pointer;
+}
+
+main #content #pay{
+	border: none;
+	padding: 20px 30px;
+}
+
+main #content #pay td{
+	width: 300px;
+	padding: 20px;
+}
+
+main #content #pay th{
+	text-align: right;
+	width: 128px;
+	padding-right: 10px;
+}
+
+main #content #pay input{
+	width: 300px;
+	height: 25px;
+}
+
+main #content #pay #ok{
+	height: 30px;
+	margin-left: 77px;
+	color: blue;
+}
+
+main #content #pay #ok:hover{
+	color: red;
+	cursor: pointer;
+}

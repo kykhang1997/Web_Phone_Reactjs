@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang thanh toán</title>
+	<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+	<header>
+		<h3><a href="">BK SHOP</a></h3>
+		<div class="log_out">
+			<a href="">Đăng xuất</a>
+		</div>
+	</header>
+
+	<main>
+		<aside>
+			<ul>
+				<li><a href="admin.html">Trang chủ Admin</a></li>
+				<li><a href="product.html">Sản phẩm</a></li>
+				<li><a href="product_type.html">Loại sản phẩm</a></li>
+				<li><a href="user.html">User</a></li>
+				<li><a href="cart.html">Giỏ hàng</a></li>
+				<li><a href="" class="active_pay">Thanh toán</a></li>
+			</ul>
+		</aside>
+
+		<div id="content">
+			<table id="pay" border="1" cellspacing="0">
+				<tr>
+					<th>ID</th>
+					<td>
+						<form action="">
+							<input type="text" id="id_pay">
+						</form>
+					</td>
+					
+				</tr>
+
+				<tr>
+					<th>Giỏ hàng id</th>
+					<td>
+						<form action="">
+							<input type="text" id="cart_id">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Sản phẩm id</th>
+					<td><form action="">
+							<input type="text" id="product_id">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Tổng tiền</th>
+					<td>
+						<form action="">
+							<input type="text" id="total">
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Số lượng</th>
+					<td>
+						<form action="">
+							<input type="text" id="amount">
+						</form>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						<form action="">
+							<input type="button" id="ok" value="Hoàn tất">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>

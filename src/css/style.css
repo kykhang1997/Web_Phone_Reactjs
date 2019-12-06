@@ -1,0 +1,440 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	width: 100%;
+	font-family: Roboto, sans-serif;
+	background: #f3f5f7;
+}
+
+header{
+	width: 100%;
+	height: 35px;
+}
+
+header nav{
+	background-color: #a8cf45;
+    color: #ffffff;
+    height: 35px;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+	padding-left: 150px;
+	float: left;
+}
+
+header nav ul li{
+	line-height: 35px;
+	padding-left: 20px;
+}
+
+
+header nav ul li a{
+	border-right: 1px solid white;
+	padding-right: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+header nav ul li a.active{
+	color: #ed3237;
+}
+
+header nav ul li a:hover{
+	color: #e10c00;
+	transition: 0.3s;
+}
+
+header nav .login_register{
+	float: right;
+	margin-right: 100px;
+}
+
+#header-content{
+	border: 1.5px solid #A5A4A4;
+	border-radius: 5px;
+	padding: 20px 20px;
+	background: white;
+}
+
+#header-content img{
+	margin: 20px 0 0 150px;
+	float: left;
+	margin-right: 80px;
+	clear: both;
+}
+
+#header-content form input{
+	border:1px solid #a8cf45;
+	border-radius: 2px;
+	width: 250px;
+	margin-top: 20px;
+	height: 30px;
+	padding-left: 20px;
+	position: relative;
+}
+
+
+#header-content form #search{
+	width: 90px;
+	height: 33px;
+	position: absolute;
+	margin-top: 20px;
+	border-radius: 2px;
+	background: #F89999;
+	border:1px solid #a8cf45;
+	cursor: pointer;
+	color: white;
+}
+
+#header-content form #search:hover{
+	background: #E88989;
+	transition: 0.3s;
+}
+
+
+#content{
+	clear: both;
+	width: 65%;
+	background: white;
+	padding: 20px;
+	float: left;
+	margin:30px 20px 0 30px;
+}
+
+#content h1{
+	background-color: #ffffff;
+    color: #ed3237;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+#content #type{
+	font-size: 13px;
+	color:#333333;
+}
+
+#content #type a{
+	color: blue;
+	text-decoration: none;
+	border-right: 1px solid black;
+	padding-right: 6px;
+}
+
+#content #type a.active-type-all{
+	color: #333333;
+	font-weight: bold;
+}
+
+#content #type a.active-type-iphone{
+	color: #333333;
+	font-weight: bold;
+}
+
+#content #type a.active-type-oppo{
+	color: #333333;
+	font-weight: bold;
+}
+
+#content #type a.active-type-nokia{
+	color: #333333;
+	font-weight: bold;
+}
+
+#content #type a.active-type-samsung{
+	color: #333333;
+	font-weight: bold;
+}
+
+#content #type a:hover{
+	text-decoration: underline;
+}
+
+#content #product-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#content #product-box a{
+	text-decoration: none;
+	color: #333333;
+	font-weight: normal;
+}
+
+#content #product-box a:hover{
+	color: #4FA7DE;
+	transition: 0.2s;
+}
+
+#content .product-item img{
+	width: 180px;
+	height: 220px;
+	padding-bottom: 10px;
+}
+
+#content .product-item img:hover{
+	width: 190px;
+	transition: 0.3s;
+	opacity: 0.8;
+}
+
+#content .product-item{
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	width: 240px;
+	margin: 10px;
+	border: 1px solid #e3e3e3;
+	height: 330px;
+	
+}
+
+
+#content .product-item .name{
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+
+#content .product-item .price{
+	color: #e10c00;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#content .product-item .sale{
+	background-color: #ed3237;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 31px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    transition: all 0.5s linear 0s;
+    width: 137px;
+    right: 130px;
+    top:20px;
+}
+
+#content .product-item button{
+	width: 70px;
+	height: 30px;
+	margin-top: 10px;
+	background: white;
+	border: 1px solid #a8cf45;
+	font-size: 13px;
+}
+
+#content .product-item button:hover{
+	background-color: #ed3237;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+aside #nav{
+	float: right;
+	margin: 30px 30px 0 0;
+	width: 20%;
+	background: white;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+aside #nav #header{
+	padding: 20px;
+	height: 20px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+aside #nav #header h1{
+	float: left;
+	font-weight: normal;
+	font-family: "Courier New", Courier, monospace;
+	line-height: 20px;
+}
+
+aside #nav #header img{
+	width: 25px;
+	height: 25px;
+	float: right;
+	padding-right: 10px;
+}
+
+aside #nav #header img:hover{
+	height: 28px;
+}
+
+aside #nav #main{
+	padding: 20px;
+}
+
+aside #nav #main h1{
+	font-family: 'face', Arial, Helvetica, sans-serif;
+    color: #066c49;
+    font-size: 20px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+aside #nav #main img{
+	width: 80px;
+	height: 50px;
+	padding-right: 14px;
+	float: left;
+}
+
+aside #nav #main li{
+	list-style: none;
+	padding: 10px;
+}
+
+aside #nav #main li h4{
+	font-size: 13px;
+    font-family: 'robo', Arial, Helvetica, sans-serif;
+    height: 36px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    color: #676767;
+}
+aside #nav #main li a{
+	text-decoration: none;
+}
+
+aside #nav #main li h4:hover{
+	color: #e10c00;
+}
+
+aside #nav #main li span{
+	color: #C6C0C0;
+}
+
+footer{
+	clear: both;
+	border: 1px solid black;
+}
+
+footer #footer-content{
+	display: flex;
+}
+
+footer #footer-content li{
+	list-style: none;
+	padding: 30px 50px;
+	margin: 0 auto;
+}
+
+footer #footer-content li h2{
+	font-size: 15px;
+	border-bottom: 1px solid #B5AEAE;
+	color: #066c49;
+	padding-bottom: 5px;
+}
+
+footer #footer-content li p{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+footer #footer-content li a{
+	color: blue;
+	text-decoration: none;
+}
+
+footer #footer-content li a:hover{
+	color: #e10c00;
+}
+
+footer #footer-bottom{
+	height: 40px;
+	background-color: #ed3237;
+	text-align: center;
+	line-height: 40px;
+	color: #F2EEEE;
+	font-size: 14px;
+}
+
+#form_register{
+	width: 500px;
+	margin: 47px auto;
+	border: 1px solid #a8cf45;
+	background: #fff;
+	padding: 40px;
+}
+
+#form_register h2{
+	text-align: center;
+	padding-bottom: 20px;
+	color: red;
+}
+
+#form_register .clearfix button{
+	width: 100px;
+	height: 30px;
+	background: #578EBE;
+	border: 1px solid #578EBE;
+	color: white;
+}
+
+#form_register .clearfix button:hover{
+	line-height: 31px;
+	cursor: pointer;
+}
+
+#form_register label{
+	width: 180px;
+	text-align: right;
+	float: left;
+	margin-right: 20px;
+}
+
+#form_register input{
+	margin-bottom: 10px;
+	height: 25px;
+}
+
+#form_login h2{
+	text-align: center;
+	padding-bottom: 20px;
+	color: red;
+}
+
+#form_login{
+	width: 500px;
+	margin: 67px auto;
+	border: 1px solid #a8cf45;
+	background: #fff;
+	padding: 40px;
+}
+
+#form_login .clearfix button{
+	width: 100px;
+	height: 30px;
+	background: #578EBE;
+	border: 1px solid #578EBE;
+	color: white;
+}
+
+#form_login .clearfix button:hover{
+	line-height: 31px;
+	cursor: pointer;
+}
+
+#form_login label{
+	width: 180px;
+	text-align: right;
+	float: left;
+	margin-right: 20px;
+}
+
+#form_login input{
+	margin-bottom: 10px;
+	height: 25px;
+}
