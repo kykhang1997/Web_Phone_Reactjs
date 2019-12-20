@@ -13,6 +13,9 @@ export class CategoryPageAdForm extends Component {
                 <td>
                   <input type="text" id="add_product" />
                 </td>
+                <td>
+                  <input type="file" id="add_product" />
+                </td>
               </tr>
               <tr>
                 <td>Tình trạng</td>

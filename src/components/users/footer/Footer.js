@@ -14,31 +14,31 @@ export class Footer extends Component {
           </li>
           <li>
             <h2>HỖ TRỢ KHÁCH HÀNG</h2>
-            <a href>
+            <a href='true'>
               <p>Quy định đổi trả</p>
             </a>
-            <a href>
+            <a href='true'>
               <p>Quy định giao hàng</p>
             </a>
-            <a href>
+            <a href='true'>
               <p>Hình thức thanh toán</p>
             </a>
-            <a href>
+            <a href='true'>
               <p>Quy định bảo hành</p>
             </a>
           </li>
           <li>
             <h2>THÔNG TIN</h2>
-            <a href>
+            <a href='true'>
               <p>Về chúng tôi</p>
             </a>
-            <a href>
+            <a href='true'>
               <p>Tuyển dụng</p>
             </a>
-            <a href>
+            <a href='true'>
               <p>Liên hệ</p>
             </a>
-            <a href>
+            <a href='true'>
               <p>Trợ giúp</p>
             </a>
           </li>

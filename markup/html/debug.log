@@ -12,3 +12,11 @@
 [1202/003510.832:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1202/005010.833:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1202/010510.834:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1206/180110.564:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1206/181443.956:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1206/182443.957:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1206/182443.957:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1206/182943.956:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1206/184443.956:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1211/202649.142:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1211/220814.178:ERROR:crash_report_database_win.cc(469)] failed to stat report

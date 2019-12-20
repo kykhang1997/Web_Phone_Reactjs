@@ -4,10 +4,15 @@ import HomePageAd from '../pages/admin/HomePageAd';
 import AppRoute from './AppRoute';
 import HomePage from '../pages/users/HomePage';
 import HomeAd from '../components/admin/main/Home';
-import Home from "../components/users/main/Home";
 import CategoryPageAd from "../pages/admin/category/CategoryPageAd";
 import CategoryPageAdForm from "../pages/admin/category/CategoryPageAdForm";
 import ProductPageAd from "../pages/admin/product/ProductPageAd";
+import ListProductCTN from "../containers/users/ListProductCTN";
+import  ProductDetailsCTN  from "../containers/users/ProductDetailsCTN";
+import Profiles from "../components/users/main/UserProfiles"
+import CartCTN from "../containers/users/CartCTN";
+import DangkyCTN from "../containers/users/DangkyCTN";
+import LoginCTN from "../containers/users/LoginCTN";
 export class PathRoute extends Component {
   render() {
     return (
@@ -46,11 +51,42 @@ export class PathRoute extends Component {
               layout={HomePageAd}
               component={ProductPageAd}
             />
+        {/* Home */}
             <AppRoute 
             exact 
             path="/" 
             layout={HomePage}
-            component={Home}
+            component={ListProductCTN}
+             />
+            <AppRoute 
+            exact 
+            path="/sanpham/:id" 
+            layout={HomePage}
+            component={ProductDetailsCTN}
+             />
+            <AppRoute 
+            exact 
+            path="/giohang" 
+            layout={HomePage}
+            component={CartCTN}
+             />
+            <AppRoute 
+            exact 
+            path="/profiles" 
+            layout={HomePage}
+            component={Profiles}
+             />
+            <AppRoute 
+            exact 
+            path="/dangky" 
+            layout={HomePage}
+            component={DangkyCTN}
+             />
+            <AppRoute 
+            exact 
+            path="/dangnhap" 
+            layout={HomePage}
+            component={LoginCTN}
              />
           </Switch>
         </Router>

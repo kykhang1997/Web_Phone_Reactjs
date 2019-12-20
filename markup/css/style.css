@@ -4,14 +4,14 @@
 }
 
 body{
-	width: 100%;
 	font-family: Roboto, sans-serif;
 	background: #f3f5f7;
+	width: 100%;
 }
 
 header{
-	width: 100%;
 	height: 35px;
+	min-width: 1300px;
 }
 
 header nav{
@@ -30,6 +30,7 @@ header ul{
 header nav ul li{
 	line-height: 35px;
 	padding-left: 20px;
+	position: relative;
 }
 
 
@@ -50,30 +51,55 @@ header nav ul li a:hover{
 	transition: 0.3s;
 }
 
+header nav ul li #menu_small{
+	display: none;
+	position: absolute;
+}
+
+header nav ul li:hover>#menu_small{
+	display: block;
+}
+
+
+header nav ul li #menu_small>li{
+	width: 104%;
+	right: 170px;
+	margin-bottom: 1px;
+	background: #a8cf45;
+	text-align: center;
+}
+
+header nav ul li #menu_small>li>a{
+	border: none;
+}
+
 header nav .login_register{
 	float: right;
 	margin-right: 100px;
 }
 
 #header-content{
-	border: 1.5px solid #A5A4A4;
+	border: 1px solid #e3e3e3;
 	border-radius: 5px;
-	padding: 20px 20px;
 	background: white;
+	padding-bottom: 40px;
+	width: 1300px;
+	margin: 30px auto;
 }
 
-#header-content img{
-	margin: 20px 0 0 150px;
+#header-content #logo{
 	float: left;
-	margin-right: 80px;
-	clear: both;
+	padding: 20px 100px 0px 240px;
+}
+
+#header-content #tim_sp{
+	padding: 25px 0px 0px 20px;
 }
 
 #header-content form input{
 	border:1px solid #a8cf45;
 	border-radius: 2px;
 	width: 250px;
-	margin-top: 20px;
 	height: 30px;
 	padding-left: 20px;
 	position: relative;
@@ -84,7 +110,6 @@ header nav .login_register{
 	width: 90px;
 	height: 33px;
 	position: absolute;
-	margin-top: 20px;
 	border-radius: 2px;
 	background: #F89999;
 	border:1px solid #a8cf45;
@@ -97,14 +122,18 @@ header nav .login_register{
 	transition: 0.3s;
 }
 
+#content_surround{
+	width: 1300px;
+	margin: 0 auto;
+}
+
 
 #content{
 	clear: both;
-	width: 1050px;
+	width: 60%;
 	background: white;
 	padding: 20px;
 	float: left;
-	margin:30px 20px 0 30px;
 }
 
 #content h1{
@@ -114,50 +143,10 @@ header nav .login_register{
     padding-bottom: 5px;
 }
 
-#content #type{
-	font-size: 13px;
-	color:#333333;
-}
-
-#content #type a{
-	color: blue;
-	text-decoration: none;
-	border-right: 1px solid black;
-	padding-right: 6px;
-}
-
-#content #type a.active-type-all{
-	color: #333333;
-	font-weight: bold;
-}
-
-#content #type a.active-type-iphone{
-	color: #333333;
-	font-weight: bold;
-}
-
-#content #type a.active-type-oppo{
-	color: #333333;
-	font-weight: bold;
-}
-
-#content #type a.active-type-nokia{
-	color: #333333;
-	font-weight: bold;
-}
-
-#content #type a.active-type-samsung{
-	color: #333333;
-	font-weight: bold;
-}
-
-#content #type a:hover{
-	text-decoration: underline;
-}
-
 #content #product-box{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #content #product-box a{
@@ -187,11 +176,10 @@ header nav .login_register{
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	width: 240px;
+	width: 220px;
 	margin: 10px;
 	border: 1px solid #e3e3e3;
 	height: 330px;
-	
 }
 
 
@@ -240,8 +228,7 @@ header nav .login_register{
 
 aside #nav{
 	float: right;
-	margin: 30px 30px 0 0;
-	width: 300px;
+	width: 25%;
 	background: white;
 	font-size: 14px;
 	font-weight: normal;
@@ -319,6 +306,7 @@ aside #nav #main li span{
 footer{
 	clear: both;
 	border: 1px solid black;
+	min-width: 1300px;
 }
 
 footer #footer-content{
@@ -438,3 +426,100 @@ footer #footer-bottom{
 	margin-bottom: 10px;
 	height: 25px;
 }
+
+#info_main{
+	width: 800px;
+	background: #fff;
+	padding: 30px;
+	margin: 20px auto;
+}
+
+#info_main h1{
+	font-size: 15px;
+	border-bottom: 2px solid #e3e3e3;
+	padding-bottom: 10px;
+}
+
+#info_main #account_detail{
+	padding-top: 20px;
+	width: 100%;
+	padding-bottom:35px;
+}
+
+#info_main #account_detail td{
+	padding-bottom: 20px;
+	font-size: 13px;
+	color: #333;
+}
+
+#thongtin_sp{
+	width: 1000px;
+	margin: 20px auto;
+	background: #fff;
+	height: 350px;
+}
+
+#thongtin_sp #img_show img{
+	width: 25%;
+	float: left;
+	padding: 20px;
+}
+
+#thongtin_sp #form_sp{
+	width: 60%;
+	float: right;
+	padding: 20px;
+}
+
+#thongtin_sp #form_sp #ten_sp h2{
+	padding-bottom: 10px;
+}
+
+
+#thongtin_sp #form_sp #ten_sp a{
+	font-size: 27px;
+	color: #333;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#thongtin_sp #form_sp #ten_sp #gia{
+	font-size: 16px;
+	color: #f94000;
+}
+
+#thongtin_sp #form_sp #khuyen_mai{
+	border: 1px solid #e3e3e3;
+	margin-top: 20px;
+	width: 400px;
+}
+
+#thongtin_sp #form_sp #khuyen_mai h1{
+	font-size: 15px;
+	height: 30px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	background: #e3e3e3;
+}
+
+#thongtin_sp #form_sp #khuyen_mai p{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+#thongtin_sp #form_sp #mua button{
+	margin-top: 10px;
+	height: 40px;
+	background: #e3e3e3;
+	background: #ff9d14;
+	cursor: pointer;
+	border: none;
+	width: 400px;
+	color: #fff;
+}
+
+#thongtin_sp #form_sp #mua button:hover{
+	color: red;
+}
+

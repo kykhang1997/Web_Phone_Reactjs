@@ -4,7 +4,7 @@ export class Search extends Component {
   render() {
     return (
       <section id="header-content">
-        <a href>
+        <a href='true'>
           <img src="../img/nova.png" alt="nova-logo" />
         </a>
         <form>

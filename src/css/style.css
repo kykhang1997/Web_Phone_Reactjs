@@ -159,6 +159,10 @@ header nav .login_register{
 	display: flex;
 	flex-wrap: wrap;
 }
+.flex-box{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 #content #product-box a{
 	text-decoration: none;

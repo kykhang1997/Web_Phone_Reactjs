@@ -11,7 +11,15 @@
 		<nav>
 			<ul>
 				<li><a href="">Trang chủ</a></li>
-				<li><a href="" class="active">Sản phẩm</a></li>
+				<li><a href="" class="active">Sản phẩm</a>
+					<ul id="menu_small">
+						<li><a href="../html/index.html">Tất cả</a></li>
+						<li><a href="../html/iphone.html">Iphone</a></li>
+						<li><a href="../html/oppo.html">Oppo</a></li>
+						<li><a href="../html/nokia.html">Nokia</a></li>
+						<li><a href="../html/samsung.html">Sam Sung</a></li>
+					</ul>
+				</li>
 				<li><a href="">Tin tức</a></li>
 				<li><a href="">Giới thiệu</a></li>
 				<li><a href="" style="border: none">Liên hệ</a></li>
@@ -26,24 +34,24 @@
 	</header>
 
 	<section id="header-content">
-		<a href=""><img src="../css/nova.png" alt="nova-logo"></a>
-		<form>
-			<input type="text" placeholder="Tìm kiếm...">
-			<button type="button" id="search">Tìm kiếm</button>
-		</form>
+			<div id="logo">
+				<a href=""><img src="../css/nova.png" alt="nova-logo"></a>
+			</div>
+
+			<div id="tim_sp">
+				<form>
+					<input type="text" placeholder="Tìm kiếm...">
+					<button type="button" id="search">Tìm kiếm</button>
+				</form>
+			</div>
+		
 	</section>
-	<main id="content">
+
+	<div id="content_surround">
+		<main id="content">
 		<h1>SẢN PHẨM</h1>
 		<hr>
 		<br>
-		<div id="type">
-			<span>Loại sản phẩm :</span>
-			<a href="../html/index.html" class="active-type-all">Tất cả</a>
-			<a href="../html/iphone.html">Iphone</a>
-			<a href="../html/oppo.html">Oppo</a>
-			<a href="../html/nokia.html">Nokia</a>
-			<a href="../html/samsung.html" style="border: none" >Samsung</a>
-		</div>
 		<div id="product-box">
 			<div class="product-item">
 				<a href=""><img src="../css/asha206.jpg" alt="asha 206"></a>
@@ -279,7 +287,7 @@
 				</div>
 			</div>
 		</div>
-	</main>
+		</main>
 
 	<aside>
 		<nav id="nav">
@@ -305,12 +313,13 @@
 					<span>Ngày đăng: 06/09/2019</span>
 				</li>
 				<li>
-					<a href="https://shopdidong.vn/cuoc-chien-nghin-do-chon-galaxy-note-9-hay-iphone-x"><img src="../css/iphone-x.jpg" title="XPERA-X72"><h4>CUỘC CHIẾN NGHÌN ĐÔ: CHỌN GALAXY NOTE 9 HAY IPHONE X?</h4></a>
+					<a href="https://shopdidong.vn/cuoc-chien-nghin-do-chon-galaxy-note-9-hay-iphone-x"><img src="../css/XPERIA X72.png" title="XPERA-X72"><h4>CUỘC CHIẾN NGHÌN ĐÔ: CHỌN GALAXY NOTE 9 HAY IPHONE X?</h4></a>
 					<span>Ngày đăng: 06/09/2019</span>
 				</li>
 			</div>
 		</nav>
 	</aside>
+	</div>
 
 	<footer>
 		<div id="footer-content">

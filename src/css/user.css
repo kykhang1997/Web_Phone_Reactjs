@@ -1,0 +1,348 @@
+#thongtin_sp{
+	width: 100%;
+	background: #fff;
+	height: auto;
+	margin-top: 30px;
+	float: left;
+}
+
+.float-details{
+	float: right;
+}
+.img-details{
+	max-width: 70%;
+	margin-left: 10%;
+}
+.btnSoLuong{
+	margin: 3% 0;
+}
+#img_show img{
+	width: 25%;
+	float: left;
+	padding: 20px;
+}
+
+#form_sp{
+	width: 60%;
+	float: right;
+	padding: 20px;
+}
+
+#ten_sp h2{
+	padding-bottom: 10px;
+}
+
+
+#ten_sp a{
+	font-size: 27px;
+	color: #333;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+ #gia{
+	margin: 3% 2%;
+    font-size: 30px;
+    color: #f94000;
+}
+ #khuyen_mai{
+	border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    width: 40%;
+	float: right;
+	margin-right: 4%;
+}
+
+ #khuyen_mai h1{
+	font-size: 15px;
+	height: 30px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	background: #e3e3e3;
+}
+#khuyen_mai p{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+ #mua button{
+	margin-top: 10px;
+	height: 40px;
+	background: #e3e3e3;
+	background: #ff9d14;
+	cursor: pointer;
+	border: none;
+	width: 400px;
+	color: #fff;
+}
+
+ #mua button:hover{
+	color: red;
+}
+
+#thongtin_giohang{
+	width: 50%;
+	margin: 30px 0 20px 50px;
+	background: #fff;
+}
+
+#sp_mua{
+	border-bottom: 1px solid #e3e3e3;
+	height: 90px;
+	padding: 20px;
+}
+
+ #cart_img img{
+	float: left;
+	width: 90px;
+	height: 90px;
+	margin-right: 30px;
+}
+
+ #tensp_giohang{
+	float: left;
+	margin-right: 180px;
+	margin-bottom: 20px;
+}
+
+ #tensp_giohang a{
+	color: red;
+	text-decoration: none;
+}
+
+ #tensp_giohang h2{
+	font-size: 16px;
+}
+
+ #gia_giohang{
+	float: left;
+	margin-right: 100px;
+	font-size: 15px;
+}
+
+ #so_luong{
+	float: right;
+}
+
+ #so_luong button{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+ #so_luong input{
+	width: 40px;
+	height: 26px;
+	text-align: center;
+}
+
+ #tong_tien{
+}
+
+ #tong_tien table{
+	padding: 20px;
+	width: 100%;
+	text-align: right;
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 10px;
+}
+
+ #thongtin_khachhang{
+	padding: 20px;
+}
+
+ #thongtin_khachhang h2{
+	color: #d0021b;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+ #thongtin_khachhang label{
+	width: 100px;
+	text-align: left;
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+ #thongtin_khachhang input{
+	width: 83%;
+	height: 30px;
+	border: solid 1px #ccc;
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.22);
+	margin-bottom: 10px;
+	padding-left: 1%;
+}
+
+ #thanh_toan{
+	width: 150px;
+	height: 35px;
+	background-color: #d0021b;
+	color: #fff;
+	border: 1px solid #d0021b;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#dang_ky_tai_khoan{
+	width: 40%;
+	margin: 30px 0 30px 50px;
+	border: 1px solid #a8cf45;
+	background: #fff;
+	padding: 20px;
+}
+
+#dang_ky_tai_khoan h2{
+	text-align: center;
+	padding-bottom: 20px;
+	color: red;
+}
+
+#dang_ky_tai_khoan label{
+	width: 120px;
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	margin-right: 20px;
+	line-height: 30px;
+}
+
+#dang_ky_tai_khoan input{
+	margin-bottom: 10px;
+	height: 30px;
+	width: 70%;
+	padding-left: 1%;
+}
+
+#dang_ky_tai_khoan #dang_ky{
+	width: 100px;
+	height: 30px;
+	background: #578EBE;
+	border: 1px solid #578EBE;
+	color: white;
+}
+
+ #dang_ky:hover{
+	line-height: 31px;
+	cursor: pointer;
+}
+
+#profiles{
+	width: 65%;
+	margin: 30px 0 30px 50px;
+}
+ #my_account{
+	width: 15%;
+	float: left;
+	margin-right: 30px;
+	padding: 20px;
+	background: #fff;
+	line-height: 30px;
+}
+
+#my_account a{
+	color: blue;
+	text-decoration: none;
+}
+
+ #my_account a:hover{
+	color: red;
+	transition: 0.2s;
+}
+
+#show_profiles{
+	padding: 20px;
+	background: #fff;
+	overflow: hidden;
+}
+
+ #show_profiles h3{
+	font-weight: normal;
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+ #show_profiles table{
+	width: 100%;
+}
+
+ #show_profiles table td{
+	padding-bottom: 20px;
+}
+
+#order{
+	background: #fff;
+	width: 65%;
+	margin: 50px;
+}
+
+ #nav_order{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+ #nav_order ul{
+	display: flex;
+	list-style: none;
+	text-align: center;
+}
+ #nav_order ul li{
+	width: 100%;
+}
+
+ #nav_order ul li a{
+	color: rgba(0,0,0,.8);
+	text-decoration: none;
+	display: block;
+}
+
+ #nav_order ul li a:hover{
+	color: #ee4d2d;
+
+}
+
+ #nav_order ul li a.active_all_order{
+	background: #ee4d2d;
+	color: #fff;
+	text-decoration: none;
+}
+
+ #nav_order ul li a.active_all_order:hover{
+	color: black;
+}
+
+ #show_order{
+	background: #fff;
+	height: 500px;
+}
+
+
+#header-content img {
+    float: left !important;
+    margin-right: 80px !important;
+    margin-left: 80px !important;
+}
+
+aside {
+    margin-top: -580px;
+}
+#ten_sp {
+	width: 45%;
+    float: left;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#mua {
+    width: 40%;
+    float: right;
+    margin-right: 6%;
+}
+footer {
+    clear: both;
+    border: 1px solid black;
+    margin-top: 50%;
+}

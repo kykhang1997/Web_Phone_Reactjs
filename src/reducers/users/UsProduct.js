@@ -6,9 +6,9 @@ const UsProduct = (state = UsProductInitialState, action) => {
     switch (action.type) {
         case Types.USLISTPRODUCT:
             state = action.sanpham;
-            return [...state]
-        case 2:
-            return state
+            return [...state];
+        case Types.USDETAILSPRODUCT:          
+            return action.sanpham;
         default:
             return state
     }

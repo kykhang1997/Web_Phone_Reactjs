@@ -1,1 +1,7 @@
 export const USLISTPRODUCT = 'USLISTPRODUCT';
+export const USDETAILSPRODUCT = 'USDETAILSPRODUCT';
+export const ADDTOCART = 'ADDTOCART';
+export const DELTOCART = 'DELTOCART';
+export const DANGKYUSER = 'DANGKYUSER';
+export const GETUSER = 'GETUSER';
+export const ADDTOBILLAPI = 'ADDTOBILLAPI';
