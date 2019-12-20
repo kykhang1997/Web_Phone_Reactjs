@@ -5,3 +5,5 @@ export const DELTOCART = 'DELTOCART';
 export const DANGKYUSER = 'DANGKYUSER';
 export const GETUSER = 'GETUSER';
 export const ADDTOBILLAPI = 'ADDTOBILLAPI';
+export const GETPROFILE = 'GETPROFILE';
+export const GETHISTORYCART = 'GETHISTORYCART';

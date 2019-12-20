@@ -24,22 +24,8 @@
       "diachi": "06 Đào Nguyên Phổ , TP-Đà Nẵng",
       "password": "123456",
       "re-pass": "123456"
-    },
-    {
-      "email": "123",
-      "password": "4123",
-      "id": 3
-    },
-    {
-      "email": "3333",
-      "password": "222",
-      "id": 4
-    },
-    {
-      "email": "213",
-      "password": "123",
-      "id": 5
     }
+   
   ],
   "loaisp": [
     {

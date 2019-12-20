@@ -95,14 +95,44 @@ export const BillAPI  = (sanpham) => {
 }
 
 
-export const addToBillApi  = (sanpham,total) => {
+export const addToBillApi  = (sanpham) => {
     return {
         type : Types.ADDTOBILLAPI,
         sanpham,
     }
 }
 
-//add cart api
+//get profile 
+export const getProfileAPI = (value) => {
+    return dispatch => {
+        ApiCall(`users?email=${value}`,'GET',null).then(res=>{
+            dispatch(getProflie(res.data))
+        })
+    }
+}
+
+export const getProflie = (users) => {
+    return {
+        type : Types.GETPROFILE,
+        users
+    }
+}
+
+//history cart
+export const getHistoryCartAPI = (value) => {
+    return dispatch => {
+        ApiCall(`thanhtoan?thongtin.email=${value}`,'GET',null).then(res=>{
+            dispatch(getHistory(res.data))
+        })
+    }
+}
+
+export const getHistory = (cart) => {
+    return {
+        type : Types.GETHISTORYCART,
+        cart
+    }
+}
 
 
 

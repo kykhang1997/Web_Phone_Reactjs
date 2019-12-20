@@ -40,8 +40,8 @@ export class LoginCTN extends Component {
     let { userState, history } = this.props;
     userState.forEach(eachRow => {
       if (email === eachRow['email'] && password === eachRow['password']) {
-        history.push("/giohang");
-        sessionStorage.setItem('TOKEN',JSON.stringify(email))
+        history.push("/");
+        sessionStorage.setItem('TOKEN',email)
       }
     });
     return "Incorrect email or password";
@@ -77,7 +77,7 @@ export class LoginCTN extends Component {
     return (
       <div id="form_login">
         <h2>Đăng nhập tài khoản</h2>
-        <form >
+        <form onSubmit={this.handleLogin}>
           <span>{this.mess}</span>
           <label htmlFor="user_name">Tên tài khoản:</label>
           <input
@@ -99,7 +99,7 @@ export class LoginCTN extends Component {
           <br />
           <div className="clearfix">
             <label>&nbsp;</label>
-            <button type="button" id="btn" onClick={this.handleLogin}>
+            <button type="submit" id="btn">
               Hoàn tất
             </button>
           </div>

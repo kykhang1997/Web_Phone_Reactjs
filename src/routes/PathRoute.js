@@ -9,10 +9,10 @@ import CategoryPageAdForm from "../pages/admin/category/CategoryPageAdForm";
 import ProductPageAd from "../pages/admin/product/ProductPageAd";
 import ListProductCTN from "../containers/users/ListProductCTN";
 import  ProductDetailsCTN  from "../containers/users/ProductDetailsCTN";
-import Profiles from "../components/users/main/UserProfiles"
 import CartCTN from "../containers/users/CartCTN";
 import DangkyCTN from "../containers/users/DangkyCTN";
 import LoginCTN from "../containers/users/LoginCTN";
+import ProfileUserCTN from "../containers/users/ProfileUserCTN";
 export class PathRoute extends Component {
   render() {
     return (
@@ -74,7 +74,7 @@ export class PathRoute extends Component {
             exact 
             path="/profiles" 
             layout={HomePage}
-            component={Profiles}
+            component={ProfileUserCTN}
              />
             <AppRoute 
             exact 
