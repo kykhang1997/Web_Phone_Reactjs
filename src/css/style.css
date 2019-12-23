@@ -98,64 +98,65 @@ header nav .login_register{
 }
 
 
-#content{
+.content{
+
 	clear: both;
-	width: 65%;
+	width: 80%;
 	background: white;
 	padding: 20px;
 	float: left;
-	margin:30px 20px 0 30px;
+	margin:auto;
 }
 
-#content h1{
+.content h1{
 	background-color: #ffffff;
     color: #ed3237;
     font-size: 25px;
     padding-bottom: 5px;
 }
 
-#content #type{
+.content .type{
 	font-size: 13px;
 	color:#333333;
 }
 
-#content #type a{
+.content .type a{
 	color: blue;
 	text-decoration: none;
 	border-right: 1px solid black;
 	padding-right: 6px;
 }
 
-#content #type a.active-type-all{
+.content .type a.active-type-all{
 	color: #333333;
 	font-weight: bold;
 }
 
-#content #type a.active-type-iphone{
+.content .type a.active-type-iphone{
 	color: #333333;
 	font-weight: bold;
 }
 
-#content #type a.active-type-oppo{
+.content .type a.active-type-oppo{
 	color: #333333;
 	font-weight: bold;
 }
 
-#content #type a.active-type-nokia{
+.content .type a.active-type-nokia{
 	color: #333333;
 	font-weight: bold;
 }
 
-#content #type a.active-type-samsung{
+.content .type a.active-type-samsung{
 	color: #333333;
 	font-weight: bold;
 }
 
-#content #type a:hover{
+.content .type a:hover{
 	text-decoration: underline;
 }
 
-#content #product-box{
+ #product-box{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -164,30 +165,30 @@ header nav .login_register{
 	flex-wrap: wrap;
 }
 
-#content #product-box a{
+.content #product-box a{
 	text-decoration: none;
 	color: #333333;
 	font-weight: normal;
 }
 
-#content #product-box a:hover{
+.content #product-box a:hover{
 	color: #4FA7DE;
 	transition: 0.2s;
 }
 
-#content .product-item img{
+.content .product-item img{
 	width: 180px;
 	height: 220px;
 	padding-bottom: 10px;
 }
 
-#content .product-item img:hover{
+.content .product-item img:hover{
 	width: 190px;
 	transition: 0.3s;
 	opacity: 0.8;
 }
 
-#content .product-item{
+.content .product-item{
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -199,19 +200,19 @@ header nav .login_register{
 }
 
 
-#content .product-item .name{
+.content .product-item .name{
 	font-family: Roboto, sans-serif;
 	font-size: 13px;
 	padding-bottom: 10px;
 }
 
-#content .product-item .price{
+.content .product-item .price{
 	color: #e10c00;
 	font-weight: bold;
 	font-size: 13px;
 }
 
-#content .product-item .sale{
+.content .product-item .sale{
 	background-color: #ed3237;
     color: #fff;
     font-size: 12px;
@@ -227,7 +228,7 @@ header nav .login_register{
     top:20px;
 }
 
-#content .product-item button{
+.content .product-item button{
 	width: 70px;
 	height: 30px;
 	margin-top: 10px;
@@ -236,7 +237,7 @@ header nav .login_register{
 	font-size: 13px;
 }
 
-#content .product-item button:hover{
+.content .product-item button:hover{
 	background-color: #ed3237;
 	cursor: pointer;
 	transition: 0.2s;
@@ -320,43 +321,39 @@ aside #nav #main li span{
 	color: #C6C0C0;
 }
 
-footer{
-	clear: both;
-	border: 1px solid black;
-}
 
-footer #footer-content{
+footer-content{
 	display: flex;
 }
 
-footer #footer-content li{
+footer-content li{
 	list-style: none;
 	padding: 30px 50px;
 	margin: 0 auto;
 }
 
-footer #footer-content li h2{
+footer-content li h2{
 	font-size: 15px;
 	border-bottom: 1px solid #B5AEAE;
 	color: #066c49;
 	padding-bottom: 5px;
 }
 
-footer #footer-content li p{
+footer-content li p{
 	font-size: 12px;
 	padding-top: 10px;
 }
 
-footer #footer-content li a{
+footer-content li a{
 	color: blue;
 	text-decoration: none;
 }
 
-footer #footer-content li a:hover{
+footer-content li a:hover{
 	color: #e10c00;
 }
 
-footer #footer-bottom{
+footer-bottom{
 	height: 40px;
 	background-color: #ed3237;
 	text-align: center;

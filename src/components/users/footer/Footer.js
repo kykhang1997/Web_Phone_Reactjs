@@ -4,7 +4,7 @@ export class Footer extends Component {
   render() {
     return (
       <footer>
-        <div id="footer-content">
+        <div className="footer-content">
           <li>
             <h2>CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ BẢO KHANG</h2>
             <p>Địa chỉ: 79 Quang Trung, Quận Hải Châu, TP.Đà Nẵng</p>
@@ -43,7 +43,7 @@ export class Footer extends Component {
             </a>
           </li>
         </div>
-        <div id="footer-bottom">
+        <div className="footer-bottom">
           <p>Copyright © 2019 by Bảo Khang. All right reserved.</p>
         </div>
       </footer>

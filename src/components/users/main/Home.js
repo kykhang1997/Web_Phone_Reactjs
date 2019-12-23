@@ -4,11 +4,11 @@ import React, { Component } from "react";
 export class Home extends Component {
   render() {
     return (
-      <main id="content">
+      <main className="content">
         <h1>SẢN PHẨM</h1>
         <hr />
         <br />
-        <div id="type">
+        <div className="type">
           <span>Loại sản phẩm :</span>
           <a href="../html/index.html" className="active-type-all">
             Tất cả

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from '../../components/users/header/Header';
 import Search from '../../components/users/search/Search';
 
-import News from '../../components/users/tintuc/News';
 import Footer from '../../components/users/footer/Footer';
 import '../../css/style.css';
 import '../../css/user.css';
@@ -14,7 +13,7 @@ export class HomePage extends Component {
                 <Header/>
                 <Search/>
                 {this.props.children}
-                <News/>
+                {/* <News/> */}
                 <Footer/>
             </div>
         );

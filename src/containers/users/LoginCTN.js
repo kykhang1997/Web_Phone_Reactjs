@@ -1,28 +1,32 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { GetUserAPi } from "../../actions/ActionUs";
-
+import {Link} from 'react-router-dom';
 export class LoginCTN extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
-      password: ''
+      email: "",
+      pass: "",
+      error: {
+        email: '',
+        pass: '',
+      }
     };
   }
 
   handleOnChange = e => {
     switch (e.target.name) {
-      case 'email':
+      case "email":
         this.setState({
           ...this.state,
           email: e.target.value
         });
         break;
-      case 'password':
+      case "pass":
         this.setState({
           ...this.state,
-          password: e.target.value
+          pass: e.target.value
         });
         break;
       default:
@@ -31,40 +35,71 @@ export class LoginCTN extends Component {
   };
 
   dologin(loginData) {
-    let email = loginData.hasOwnProperty('email')
-      ? loginData['email']
-      : "";
-    let password = loginData.hasOwnProperty('password')
-      ? loginData['password']
+    let email = loginData.hasOwnProperty("email") ? loginData["email"] : "";
+    let pass = loginData.hasOwnProperty("pass")
+      ? loginData["pass"]
       : "";
     let { userState, history } = this.props;
+    let {error} = this.state;
+    let valid = true
     userState.forEach(eachRow => {
-      if (email === eachRow['email'] && password === eachRow['password']) {
+      if (email === eachRow["email"] && pass === eachRow["password"]) {
+        sessionStorage.setItem("TOKEN", email);
+        alert('Đăng Nhập Thành Công');
         history.push("/");
-        sessionStorage.setItem('TOKEN',email)
+      } else {
+        valid = false;
+        error.email = 'Sai Email hoặc Mật Khẩu';
+        error.pass = 'Sai Email hoặc Mật Khẩu';
+        this.setState({...error})
       }
     });
-    return "Incorrect email or password";
+    return valid;
   }
+  handleValid(){
+    let {email,pass,error} = this.state;
+    let valid = true;
+    //email
+    if (!email) {
+      valid = false;
+      error.email = "Cannot be empty";
+    }
+    if (typeof email !== "undefined") {
+      let lastAtPos = email.lastIndexOf("@");
+      let lastDotPos = email.lastIndexOf(".");
 
-  handleLogin = () => {
-    let errorMsg = "";
-    Object.keys(this.state).forEach(k => {
-      if (!this.state["" + k]) {
-        errorMsg = k + "is required";
+      if (
+        !(
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          email.indexOf("@@") === -1 &&
+          lastDotPos > 2 &&
+          email.length - lastDotPos > 2
+        )
+      ) {
+        valid = false;
+        error.email = "Email Không đúng định dạng";
       }
-    });
-    if (errorMsg) {
-      // this.setState(errorMsg);
-      // console.log('erro');
+    }
+    
+    //pass
+    if (!pass) {
+      valid = false;
+      error.pass = "Cannot be empty";
+    }
+    if (pass.length < 6 ){
+      valid = false;
+      error.pass = "Mật Khẩu ít nhất 6 ký tự";
+    }
+    this.setState({ ...error });
+    return valid;
+  }
+  handleLogin = (e) => {
+    e.preventDefault();
+    if (!this.handleValid()) {
+      alert('Đăng Nhập Không Thành Công')
     } else {
-      // this.setState('');
-      let resLogin = this.dologin(this.state);
-      
-      console.log(resLogin);
-      if (resLogin) {
-        // this.mess(resLogin);
-      }
+      this.dologin(this.state);
     }
   };
 
@@ -73,35 +108,39 @@ export class LoginCTN extends Component {
   }
 
   render() {
+    console.log(this.state.error);
     
     return (
-      <div id="form_login">
+      <div className="login">
         <h2>Đăng nhập tài khoản</h2>
         <form onSubmit={this.handleLogin}>
           <span>{this.mess}</span>
-          <label htmlFor="user_name">Tên tài khoản:</label>
+          <label htmlFor="user_name">Email:</label>
           <input
-            type="text"
-            id="user_name"
+            type="email"
+            className="form-control"
             name="email"
             placeholder="Nhập tên tài khoản"
             onChange={this.handleOnChange}
           />
+          <span style={{color:'red'}}>{this.state.error.email}</span>
           <br />
           <label htmlFor="pass">Mật khẩu:</label>
           <input
             type="password"
-            id="password"
-            name="password"
+            className="form-control"
+            name="pass"
             placeholder="Nhập mật khẩu"
             onChange={this.handleOnChange}
           />
+          <span style={{color:'red'}}>{this.state.error.pass}</span>
           <br />
           <div className="clearfix">
             <label>&nbsp;</label>
-            <button type="submit" id="btn">
-              Hoàn tất
+            <button type="submit" className="btn btn-success buttonLogin">
+              Đăng Nhập
             </button>
+            <Link className="btn btn-link" to="/">Huỷ</Link>
           </div>
         </form>
       </div>

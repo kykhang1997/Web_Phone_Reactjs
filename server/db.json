@@ -24,8 +24,16 @@
       "diachi": "06 Đào Nguyên Phổ , TP-Đà Nẵng",
       "password": "123456",
       "re-pass": "123456"
+    },
+    {
+      "id": 3,
+      "name": "khang",
+      "email": "khang@gmail.com",
+      "password": "123456",
+      "re_pass": "123456",
+      "phone": "0937264599",
+      "diachi": "555dddddeeee"
     }
-   
   ],
   "loaisp": [
     {

@@ -21,7 +21,7 @@ export class Product extends Component {
     // console.log(JSON.parse(localStorage.getItem('TOKEN')));
     var { listproduct } = this.props;
     return (
-      <div id="product-box">
+      <div className="product-box">
         <Home>
           <div className="flex-box">{this.showProducts(listproduct)}</div>
         </Home>

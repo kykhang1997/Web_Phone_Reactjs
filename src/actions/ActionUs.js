@@ -133,6 +133,20 @@ export const getHistory = (cart) => {
         cart
     }
 }
+//search 
+export const SearchProductsAPI  = (value) => {
+    return dispatch => {
+        ApiCall(`sanpham?tensp_like=${value}`,'GET',null).then(res=>{
+            dispatch(seachProducts(res.data))
+        })
+    }
+}
 
+export const seachProducts = (sanpham) => {
+    return {
+        type : Types.SEARCHPRODUCTS,
+        sanpham
+    }
+}
 
 

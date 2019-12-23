@@ -31,7 +31,7 @@ export class Header extends Component {
       );
     } else {
       button = (
-        <div className="login_register">
+        <div className="floatR">
           <ul>
             <li>
               <Link to="/dangnhap">Đăng nhập</Link>
@@ -48,8 +48,8 @@ export class Header extends Component {
 
     return (
       <header>
-        <nav className="">
-          <ul style={{marginRight:"auto"}}>
+        <div className="topnav">
+          <ul >
             <li>
               <Link to="/">Trang chủ</Link>
             </li>
@@ -69,10 +69,13 @@ export class Header extends Component {
                 Liên hệ
               </a>
             </li>
-            {button}
+            
+             
+        
+            
           </ul>
-          
-        </nav>
+          {button}
+        </div>
       </header>
     );
   }

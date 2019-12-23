@@ -28,13 +28,12 @@ export class ProfileUserCTN extends Component {
           {this.showprofile(profile)}
           <hr />
 		  <h3>Lịch Sử Mua Hàng</h3>
-          <table border={1}>
+          <table border={1} className='table'>
             <tbody>
               <tr>
                 <td>ID</td>
-                <td>Tên</td>
+                <td>Tên Người Nhận </td>
                 <td>SĐT</td>
-                <td>Email</td>
                 <td>Địa chỉ Nhận</td>
                 <td>Ngày Mua</td>
                 <td >Sản Phẩm</td>
@@ -42,19 +41,7 @@ export class ProfileUserCTN extends Component {
                 <td>Tổng Tiền</td>
                 <td>Tình Trạng</td>
               </tr>
-              {/* <tr>
-                <td>{index + 1}</td>
-                <td>{item.thongtin.tennguoinhan}</td>
-                <td>{item.thongtin.phone}</td>
-                <td>{item.thongtin.email}</td>
-                <td>{item.thongtin.diachinhan}</td>
-                <td>
-                  <Moment date={item.thongtin.ngaytao} />
-                </td>
-                <td colSpan={3}>{this.showcart(item.cart)}</td>
-                <td>{item.tongtien}</td>
-                <td>{item.thongtin.tinhtrang}</td>
-              </tr> */}
+              
               {this.showhistorycart(historycart)}
             </tbody>
           </table>

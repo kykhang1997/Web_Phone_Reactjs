@@ -20,6 +20,111 @@
 .marginL4{
     margin-left: 4%;
 }
+/*------------------header-----------------------*/
+header{
+  
+	width: 100%;
+	height: 35px;
+}
+
+header nav{
+	background-color: #a8cf45;
+    color: #ffffff;
+    height: 35px;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+	padding-left: 6em;
+	float: left;
+}
+
+header nav ul li{
+	line-height: 35px;
+}
+
+.headera{
+  text-align: center;
+}
+
+header nav ul li a{
+	border-right: 1px solid white;
+  padding-right: 2em;
+  padding-left: 2em;
+	color: #ffffff;
+	text-decoration: none;
+  font-size: 14px;
+  
+}
+
+
+header nav ul li a:hover{
+  color: #066c49;
+	transition: 0.3s;
+}
+
+header nav .login_register{
+	float: right;
+	margin-right: 100px;
+}
+.menu{
+  width:80%
+}
+/*------------------productlist-----------------------*/
+.product-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+.type{
+	font-size: 13px;
+	color:#333333;
+}
+/*----------------footer----------------------*/
+footer{
+    margin-top:3%;
+	clear: both;
+	border: 1px solid black;
+}
+.footer-content{
+	display: flex;
+}
+
+.footer-content li{
+	list-style: none;
+	padding: 30px 50px;
+	margin: 0 auto;
+}
+
+.footer-content li h2{
+	font-size: 15px;
+	border-bottom: 1px solid #B5AEAE;
+	color: #066c49;
+	padding-bottom: 5px;
+}
+
+.footer-content li p{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.footer-content li a{
+	color: blue;
+	text-decoration: none;
+}
+
+.footer-content li a:hover{
+	color: #e10c00;
+}
+
+.footer-bottom{
+	height: 40px;
+	background-color: #ed3237;
+	text-align: center;
+	line-height: 40px;
+	color: #F2EEEE;
+	font-size: 14px;
+}
 /*---------------Khuyen mai-------------------*/
 .khuyenmai{
     background: #e3e3e3;
@@ -45,33 +150,40 @@
   text-align: center;
 }.footerTC{
    text-align: right;
+}ul.ul_giohang {
+    margin-left: 618px;
 }
 
 /*-----------------dang ky-----------------------*/
-#dang_ky_tai_khoan{
-    width: 70%;
-    margin: 30px 0 30px 50px;
+.registration{
+    width: 50%;
+    margin: auto;
     border: 1px solid #a8cf45;
     background: #fff;
-    padding: 20px;
+    padding:2%;
+    margin-top: 1%;
 }
 
-#dang_ky_tai_khoan label {
-    width: 130px;
-    text-align: left;
-    float: left;
-    font-size: 14px;
-    margin-right: 20px;
-    line-height: 30px;
-}
 
-.form-group {
-    margin-bottom: 30px;
-}
+
 /*------------------login/registration--------------------------*/
 .login_register{
 
 }
-ul.ul_giohang {
-    margin-left: 618px;
+
+.label--regis{
+    float: left;
+    width:35%;
+}
+.login {
+    border: 1px solid #a8cf45;
+    background:white;
+    margin:auto;
+    width: 50%;
+    padding:2%;
+    margin-top: 1%; 
+}
+.buttonLogin{
+    
+    margin-right: 1%;
 }

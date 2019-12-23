@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Moment from 'react-moment';
 
 export class CartFormOrder extends Component {
   constructor(props) {
@@ -10,7 +9,6 @@ export class CartFormOrder extends Component {
       tennguoinhan:'',
       phone:'',
       diachinhan:'',
-      ngaytao:'',
       tinhtrang:''
     };
   }
@@ -41,21 +39,17 @@ export class CartFormOrder extends Component {
 
   render() {
     // console.log(JSON.parse(sessionStorage.getItem('TOKEN')));
-    let { id,diachinhan,phone,tennguoinhan,ngaytao,tinhtrang } = this.state;
-    let email = JSON.parse(sessionStorage.getItem('TOKEN'));
+    let { id,diachinhan,phone,tennguoinhan,tinhtrang } = this.state;
+    let email = sessionStorage.getItem('TOKEN');
     let { cart } = this.props;
     let tongtien = this.total(cart);
     let date = new Date();
-    let datetime = <Moment date={date}/>
-    let dateformat = datetime.props.date;
-    console.log(dateformat);
-    
     let cartapi ={
       email,
       diachinhan,
       phone,
       tennguoinhan,
-      ngaytao:dateformat,
+      ngaytao:date,
       tinhtrang
     }
     let bill = {
