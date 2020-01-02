@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/users/header/Header';
 import Search from '../../components/users/search/Search';
-
 import Footer from '../../components/users/footer/Footer';
 import '../../css/style.css';
 import '../../css/user.css';
@@ -10,10 +9,9 @@ export class HomePage extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                <Header history={this.props.children.props.history}/>
                 <Search/>
                 {this.props.children}
-                {/* <News/> */}
                 <Footer/>
             </div>
         );

@@ -39,28 +39,28 @@ export class ProductDetailsCTN extends Component {
   add = (sanpham, count) => {
     this.props.addcart(sanpham, count);
   };
-  checklogin =(sanpham,count)=> {
-    if(sessionStorage.getItem('TOKEN')){
-      this.add(sanpham,count)
-      this.props.history.push('/giohang')
+  checklogin = (sanpham, count) => {
+    if (sessionStorage.getItem("TOKEN")) {
+      this.add(sanpham, count);
+      this.props.history.push("/giohang");
     } else {
-      this.props.history.push('/dangnhap');
+      this.props.history.push("/dangnhap");
     }
-  }
+  };
   render() {
     // console.log(this.state.count);
     let { details } = this.props;
     return (
       <div className="container-fluid">
         <ProductDetails>
-          <div className="paddingb10 floatL" style={{ width: "50%" }}>
+          <div className="col-sm-6">
             <img
               src={details.hinhanh}
               alt="img"
               className="img-details img-fluid "
             />
           </div>
-          <div className=" floatR width40 marginR4">
+          <div className=" col-sm-6 marginR4">
             <h2 href="true">{details.tensp}</h2>
             <h4 style={{ color: "red" }}>
               <NumberFormat
@@ -71,7 +71,7 @@ export class ProductDetailsCTN extends Component {
               />{" "}
               VND
             </h4>
-            <div className="btnSoLuong">
+            <div className="btnSoLuong ">
               <button className="btn btn-success" onClick={this.handerMinus}>
                 -
               </button>
@@ -84,18 +84,16 @@ export class ProductDetailsCTN extends Component {
                 +
               </button>
             </div>
-          </div>
-          <div className="khuyenmai floatR  width40 marginR4">
+            <div className="khuyenmai    marginR4">
             <h2>KHUYẾN MÃI ÁP DỤNG:</h2>
             <p>
-              Giảm thêm {details.giamgia}% tối đa 100.000đ khi thanh toán qua
-              VNPAY
+            {details.noidung}
             </p>
           </div>
-          <div className="floatR width40 marginR4"></div>
+          <div className="  marginR4"></div>
           <button
             onClick={() => this.checklogin(details, this.state.count)}
-            className="mua floatR btn btn-warning  width40 marginR4"
+            className="mua  btn btn-warning   marginR4"
           >
             <p>
               Chỉ Với{" "}
@@ -104,10 +102,12 @@ export class ProductDetailsCTN extends Component {
                 displayType={"text"}
                 thousandSeparator={true}
                 renderText={value => value}
-              />
+              />{" "}
               VND Mua Ngay
             </p>
           </button>
+            </div>
+         
         </ProductDetails>
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { GetUserAPi } from "../../actions/ActionUs";
+import { GetUserAPi, checklogin } from "../../actions/ActionUs";
 import {Link} from 'react-router-dom';
 export class LoginCTN extends Component {
   constructor(props) {
@@ -43,9 +43,13 @@ export class LoginCTN extends Component {
     let {error} = this.state;
     let valid = true
     userState.forEach(eachRow => {
+      
       if (email === eachRow["email"] && pass === eachRow["password"]) {
         sessionStorage.setItem("TOKEN", email);
         alert('Đăng Nhập Thành Công');
+        error.email = '';
+        error.pass = '';
+        this.setState({...error})
         history.push("/");
       } else {
         valid = false;
@@ -94,12 +98,12 @@ export class LoginCTN extends Component {
     this.setState({ ...error });
     return valid;
   }
-  handleLogin = (e) => {
-    e.preventDefault();
+  handleLogin = () => {
     if (!this.handleValid()) {
-      alert('Đăng Nhập Không Thành Công')
+      alert('Đăng Nhập Không Thành Công (Mời Nhập Lại)');
     } else {
       this.dologin(this.state);
+      this.props.checkloginmenu()
     }
   };
 
@@ -108,14 +112,13 @@ export class LoginCTN extends Component {
   }
 
   render() {
-    console.log(this.state.error);
+    // console.log(this.props.userState);
     
     return (
       <div className="login">
         <h2>Đăng nhập tài khoản</h2>
         <form onSubmit={this.handleLogin}>
-          <span>{this.mess}</span>
-          <label htmlFor="user_name">Email:</label>
+            <label htmlFor="user_name">Email:</label>
           <input
             type="email"
             className="form-control"
@@ -140,7 +143,7 @@ export class LoginCTN extends Component {
             <button type="submit" className="btn btn-success buttonLogin">
               Đăng Nhập
             </button>
-            <Link className="btn btn-link" to="/">Huỷ</Link>
+            <Link className="btn btn-info" to="/">Huỷ</Link>
           </div>
         </form>
       </div>
@@ -150,7 +153,7 @@ export class LoginCTN extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    userState: state.UsLogin
+    userState: state.UsLogin,
   };
 };
 
@@ -158,6 +161,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     getUser: () => {
       dispatch(GetUserAPi());
+    },
+    checkloginmenu:()=>{
+      dispatch(checklogin())
     }
   };
 };

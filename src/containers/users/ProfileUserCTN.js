@@ -18,17 +18,17 @@ export class ProfileUserCTN extends Component {
     return (
       <div id="profiles">
         <div id="my_account">
-          <Link to="">Hồ sơ của tôi</Link>
+          <Link to="" style={{textalign: "center"}}>Hồ sơ của tôi</Link>
           <br />
           {/* <Link to="">Đơn mua</Link> */}
         </div>
 
         <div id="show_profiles">
-          <h3>Hồ Sơ Của Tôi</h3>
+          <h3 style={{textalign: "center"}}>Hồ Sơ Của Tôi</h3>
           {this.showprofile(profile)}
           <hr />
 		  <h3>Lịch Sử Mua Hàng</h3>
-          <table border={1} className='table'>
+          <table border={1} className='table table-responsive'>
             <tbody>
               <tr>
                 <td>ID</td>
@@ -37,7 +37,6 @@ export class ProfileUserCTN extends Component {
                 <td>Địa chỉ Nhận</td>
                 <td>Ngày Mua</td>
                 <td >Sản Phẩm</td>
-                
                 <td>Tổng Tiền</td>
                 <td>Tình Trạng</td>
               </tr>

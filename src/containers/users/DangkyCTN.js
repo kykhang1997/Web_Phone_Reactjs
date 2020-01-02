@@ -81,7 +81,7 @@ export class DangkyCTN extends Component {
     if (typeof name !== "undefined") {
       if (!name.match(/^[a-zA-Z]+$/)) {
         valid = false;
-        error.name = "Tên chỉ được viết chữ";
+        error.name = "Tên chỉ được viết chữ (Nhập Lại)";
       }
     }
     //email
@@ -103,7 +103,7 @@ export class DangkyCTN extends Component {
         )
       ) {
         valid = false;
-        error.email = "Email Không đúng định dạng";
+        error.email = "Email Không đúng định dạng (Nhập Lại)";
       }
     }
     if(email){
@@ -111,18 +111,18 @@ export class DangkyCTN extends Component {
         let api = {eachRow};
         if(api.eachRow.email === email){
           valid = false;
-          error.email = 'Email Đã Tồn Tại';
+          error.email = 'Email Đã Tồn Tại (Nhập Lại)';
         }
       })
     }
     //pass
     if (!pass) {
       valid = false;
-      error.pass = "Cannot be empty";
+      error.pass = "Cannot be empty ";
     }
     if (pass.length < 6 ){
       valid = false;
-      error.pass = "Mật Khẩu ít nhất 6 ký tự";
+      error.pass = "Mật Khẩu ít nhất 6 ký tự (Nhập Lại)";
     }
     //re-pass 
     if (!re_pass) {
@@ -131,7 +131,7 @@ export class DangkyCTN extends Component {
     }
     if(re_pass !== pass) {
       valid = false;
-      error.re_pass = "Phải giống với Mật Khẩu ";
+      error.re_pass = "Phải giống với Mật Khẩu (Nhập Lại) ";
     }
     //phone
     if (!phone) {
@@ -140,7 +140,7 @@ export class DangkyCTN extends Component {
     }
     if (phone.length !== 10 ) {
       valid = false;
-      error.phone = "Số Điện Thoại Phải Có 10 số";
+      error.phone = "Số Điện Thoại Phải Có 10 số (Nhập Lại)";
     }
     //diachi
     if (!diachi) {
@@ -156,12 +156,12 @@ export class DangkyCTN extends Component {
     e.preventDefault();
     let { name, email, pass, re_pass, phone, diachi } = this.state;
     if (!this.handleValidate()) {
-      alert("Đăng Ký Không Thành Công");
+      alert("Đăng Ký Không Thành Công Mời Nhập Lại");
     } else {
       var user = {
         name,
         email,
-        pass,
+        password:pass,
         re_pass,
         phone,
         diachi
@@ -251,7 +251,8 @@ export class DangkyCTN extends Component {
             <button type="submit" className="btn btn-success">
               Hoàn tất
             </button>
-            <Link to="/" className="btn btn-link">
+            <label>&nbsp;</label>
+            <Link to="/" className="btn btn-info">
               HỦY
             </Link>
           </div>

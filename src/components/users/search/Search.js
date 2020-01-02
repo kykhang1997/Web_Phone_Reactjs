@@ -28,8 +28,6 @@ export class Search extends Component {
   
   
   render() {
-    console.log(this.state);
-    
     return (
       <section id="header-content">
         <Link to={"/"}><img src="../img/nova.png" alt="nova-logo" /></Link>
@@ -37,7 +35,7 @@ export class Search extends Component {
     
         <form onSubmit={this.handerSubmit}>
           <input type="text" placeholder="Tìm kiếm Sản Phẩm..." name='search' onChange={this.handleOnchange}/>
-          <button type="submit" id="search">
+          <button type="submit" className="btn btn-success">
             Tìm kiếm
           </button>
         </form>

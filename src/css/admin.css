@@ -1,317 +1,295 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-body{
-	font-family: serif;
-}
-
-header{
-	background: black;
-	height: 40px;
-	line-height: 40px;
-}
-
-header h3{
-	font-weight: normal;
-	padding-left: 40px;
+.sidenav {
+	width: 400px;
+	/* position: fixed; */
+	z-index: 1;
+	top: 20px;
+	left: 10px;
+	background: #eee;
+	overflow-x: hidden;
+	padding: 8px 0;
 	float: left;
-}
-
-header a{
-	color: #D9D8D8;
+	margin-bottom: 3%;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
 	text-decoration: none;
+	font-size: 25px;
+	color: #2196F3;
 	display: block;
-}
-
-header .log_out a{
-	float: right;
-	color: #D9D8D8;
-	text-decoration: none;
-	padding-right: 40px;
-	color: #D9D8D8;
-}
-
-header .log_out a:hover{
-	color: red;
-}
-
-main{
-	
-}
-
-main aside{
-	width: 250px;
-	background:#615F5F;
-	height: 600px;
+  }
+  .labelform{
+	  width: 120px;
+  }
+  .sidenav a:hover {
+	color: #064579;
+  }
+  .form-inline label{
+	width: 20%;
+  }
+  .btnAdd{
+	  margin-bottom: 2%;
+  }
+  .main {
+	margin-left: 140px; /* Same width as the sidebar + left position in px */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+  }
+  #content{
 	float: left;
-}
-
-main aside ul{
-	list-style: none;
-}
-
-main aside ul li{
-	border-bottom: 1px solid #e3e3e3;
-	padding-bottom: 10px;
-	padding: 20px;
-}
-
-main aside ul li a{
-	color: #EAEAEA;
-	text-decoration: none;
-	display: block;
-	/* background: url(../css/dashboard.png) no-repeat; */
-	background-size: 20px 20px;
-	text-indent: 30px;
-}
-
-main aside ul li a:hover{
-	color: red;
-}
-
-main aside ul li a.active{
-	color: red;
-}
-
-main #content{
-	width: 100%;
-	background: #fff;
-	padding-top: 20px;
-}
-
-
-main #content #items1{
-	display: flex;
-    justify-content: space-around;
-}
-
-main #content .item{
-	border: 1px solid black;
-	width: 250px;
-	height: 100px;
-	text-align: center;
-	line-height: 100px;
-	background: #ccc;
-}
-
-main #content #items2{
-	display: flex;
-    justify-content: space-around;
-}
-
-main #content #items2 #item_left{
-	width: 800px;
-	height: 200px;
-	background: #66BFF0;
-	margin-top: 20px;
-}
-
-main #content #items2 #item_right{
-	width: 350px;
-	height: 200px;
-	background: #f86c6b;;
-	margin-top: 20px;
-}
-
-main #content #card{
-	display: flex;
-	justify-content: space-around;
-}
-
-main #content #card #card_1{
-	background: #6610f2;
-	width: 250px;
-	height: 100px;
-	margin-top: 20px;
-}
-
-main #content #card #card_2{
-	background: #6f42c1;;
-	width: 250px;
-	height: 100px;
-	margin-top: 20px;
-}
-
-main #content #card #card_3{
-	background: #e83e8c;;
-	width: 250px;
-	height: 100px;
-	margin-top: 20px;
-}
-
-main #content #card #card_4{
-	background: #f86c6b;
-	width: 250px;
-	height: 100px;
-	margin-top: 20px;
-}
-
-main aside .active_product{
-	color: red;
-}
-
-main aside .active_product_type{
-	color: red;
-}
-
-main aside .active_user{
-	color: red;
-}
-
-main aside .active_cart{
-	color: red;
-}
-
-main aside .active_pay{
-	color: red;
-}
-
-main #content #form_search{
-	text-indent: 20px;
-}
-
-main #content #product{
-	text-align: center;
-	padding: 20px;
-	border: none;
-}
-
-main #content #product td{
-	padding: 10px;
-	width: 200px;
-}
-
-main #content #product a{
-	color: blue;
-	text-decoration: none;
-}
-
-main #content #product a:hover{
-	color: red;
-}
-
-main #content #edit_product{
-	margin: 40px auto;
-}
-
-main #content #add_product{
-	width: 290px;
-}
-
-main #content #edit_product td{
-	padding: 10px;
-	width: 300px;
-}
-
-main #content #edit_product input{
-	margin: 5px;
-}
-
-main #content #edit_product #add_products{
-	width: 100px;
-	margin-left: 260px;
-	height: 30px;
-}
-
-main #content #edit_product #add_products:hover{
-	color: red;
-	transition: 0.3s;
-}
-
-main #content #user{
-	border: none;
-	padding: 20px 30px;
-}
-
-main #content #user td{
-	width: 300px;
-	padding: 20px;
-}
-
-main #content #user th{
-	text-align: right;
-	width: 128px;
-	padding-right: 10px;
-}
-
-main #content #user input{
-	width: 300px;
-	height: 25px;
-}
-
-main #content #user #ok{
-	height: 30px;
-	margin-left: 77px;
-	color: blue;
-}
-
-main #content #user #ok:hover{
-	color: red;
-	cursor: pointer;
-}
-
-main #content #cart{
-	border: none;
-	padding: 20px 30px;
-}
-
-main #content #cart td{
-	width: 300px;
-	padding: 20px;
-}
-
-main #content #cart th{
-	text-align: right;
-	width: 128px;
-	padding-right: 10px;
-}
-
-main #content #cart input{
-	width: 300px;
-	height: 25px;
-}
-
-main #content #cart #ok{
-	height: 30px;
-	margin-left: 77px;
-	color: blue;
-}
-
-main #content #cart #ok:hover{
-	color: red;
-	cursor: pointer;
-}
-
-main #content #pay{
-	border: none;
-	padding: 20px 30px;
-}
-
-main #content #pay td{
-	width: 300px;
-	padding: 20px;
-}
-
-main #content #pay th{
-	text-align: right;
-	width: 128px;
-	padding-right: 10px;
-}
-
-main #content #pay input{
-	width: 300px;
-	height: 25px;
-}
-
-main #content #pay #ok{
-	height: 30px;
-	margin-left: 77px;
-	color: blue;
-}
-
-main #content #pay #ok:hover{
-	color: red;
-	cursor: pointer;
-}
+	margin-left: 5%;
+	width: 60%;
+  }
+  .forminput{
+	  border: 1px solid;
+	  padding: 5%;
+  }
+  .active-pink-4 input[type=text]:focus:not([readonly]) {
+	border: 1px solid #f48fb1;
+	box-shadow: 0 0 0 1px #f48fb1;
+	}
+	.active-pink-3 input[type=text] {
+	border: 1px solid #f48fb1;
+	box-shadow: 0 0 0 1px #f48fb1;
+	}
+	.active-pink-3 input{
+		width: 350px;
+		float: left;
+	}
+	.btnSearch{
+		margin-left: 1%;
+	}
+	.table{
+		width: 100%;
+	}
+	.img-sanpham{
+		max-width: 30%;
+		height: auto;
+	}
+	.inputform{
+		width: 50%!important;
+		margin-left: 2%;
+	}
+	.limiter {
+		width: 100%;
+		margin: 0 auto;
+	  }
+	  
+	  .container-login100 {
+		width: 100%;  
+		min-height: 100vh;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+		background: #e9faff;
+	  }
+	  
+	  .wrap-login100 {
+		width: 500px;
+		background: #fff;
+		border-radius: 10px;
+		overflow: hidden;
+	  
+		box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+		-o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+		-ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	  }
+	  
+	  
+	  /*==================================================================
+	  [ Form ]*/
+	  
+	  .login100-form {
+		width: 100%;
+	  }
+	  
+	  .login100-form-title {
+		display: block;
+		font-family: OpenSans-Regular;
+		font-size: 30px;
+		color: #555555;
+		line-height: 1.2;
+		text-align: center;
+	  }
+	  
+	  /*------------------------------------------------------------------
+	  [ Input ]*/
+	  
+	  .wrap-input100 {
+		width: 100%;
+		position: relative;
+		background-color: #fff;
+		border: 1px solid #e6e6e6;
+	  }
+	  
+	  .wrap-input100.rs1 {
+		border-top: none;
+	  }
+	  
+	  .input100 {
+		display: block;
+		width: 100%;
+		background: transparent;
+		font-family: OpenSans-Regular;
+		font-size: 15px;
+		color: #666666;
+		line-height: 1.2;
+	  }
+	  
+	  
+	  /*---------------------------------------------*/
+	  input.input100 {
+		height: 68px;
+		padding: 0 25px 0 25px;
+		border: 0;
+	  }
+	  
+	  /*------------------------------------------------------------------
+	  [ Focus Input ]*/
+	  
+	  .focus-input100-1, 
+	  .focus-input100-2 {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+	  }
+	  
+	  .focus-input100-1::before,
+	  .focus-input100-2::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 1px;
+		background-color: #4272d7;
+	  }
+	  
+	  .focus-input100-1::before {
+		top: -1px;
+		left: 0;
+	  }
+	  
+	  .focus-input100-2::before {
+		bottom: -1px;
+		right: 0;
+	  }
+	  
+	  .focus-input100-1::after,
+	  .focus-input100-2::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1px;
+		height: 0;
+		background-color: #4272d7;
+	  }
+	  
+	  .focus-input100-1::after {
+		top: 0;
+		right: -1px;
+	  }
+	  
+	  .focus-input100-2::after {
+		bottom: 0;
+		left: -1px;
+	  }
+	  
+	  .input100:focus + .focus-input100-1::before {
+		-webkit-animation: full-w 0.2s linear 0s;
+		animation: full-w 0.2s linear 0s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	  }
+	  
+	  .input100:focus + .focus-input100-1::after {
+		-webkit-animation: full-h 0.1s linear 0.2s;
+		animation: full-h 0.1s linear 0.2s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	  }
+	  
+	  .input100:focus + .focus-input100-1 + .focus-input100-2::before {
+		-webkit-animation: full-w 0.2s linear 0.3s;
+		animation: full-w 0.2s linear 0.3s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	  }
+	  
+	  .input100:focus + .focus-input100-1 + .focus-input100-2::after {
+		-webkit-animation: full-h 0.1s linear 0.5s;
+		animation: full-h 0.1s linear 0.5s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	  }
+	  
+	  
+	  @keyframes full-w {
+		to {
+		  width: calc(100% + 1px);
+		}
+	  }
+	  
+	  @keyframes full-h {
+		to {
+		  height: calc(100% + 1px);
+		}
+	  }
+	  
+	  
+	  /*------------------------------------------------------------------
+	  [ Button ]*/
+	  .container-login100-form-btn {
+		width: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  
+	  .login100-form-btn {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 20px;
+		width: 100%;
+		height: 60px;
+		background-color: #4272d7;
+	  
+		font-family: OpenSans-Regular;
+		font-size: 14px;
+		color: #fff;
+		line-height: 1.2;
+		text-transform: uppercase;
+	  
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+		transition: all 0.4s;
+	  }
+	  
+	  .login100-form-btn:hover {
+		background-color: #333333;
+	  }
+	  
+  /* @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  } */

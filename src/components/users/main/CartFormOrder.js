@@ -6,57 +6,65 @@ export class CartFormOrder extends Component {
     this.state = {
       id: "",
       email: "",
-      tennguoinhan:'',
-      phone:'',
-      diachinhan:'',
-      tinhtrang:''
+      tennguoinhan: "",
+      phone: "",
+      diachinhan: "",
+      tinhtrang: "",
+      errors: {
+        tennguoinhan: "",
+        phone: "",
+        diachinhan: ""
+      }
     };
   }
   handleOnChange = e => {
-    switch (e.target.name) {
+    e.preventDefault();
+    const { name, value } = e.target;
+    let errors = this.state.errors;
+
+    switch (name) {
       case "tennguoinhan":
-        this.setState({
-          ...this.state,
-          tennguoinhan: e.target.value
-        });
+        errors.tennguoinhan =
+          value.length < 5 ? "Nhập Đầy Đủ Họ Và Tên Người Nhận!" : "";
         break;
       case "phone":
-        this.setState({
-          ...this.state,
-          phone: e.target.value
-        });
+        errors.phone = value.length < 10
+          ? "Số Điện Thoại Có Độ Dài 10 Ký Tự !"
+          : "";
         break;
       case "diachinhan":
-        this.setState({
-          ...this.state,
-          diachinhan: e.target.value
-        });
+        errors.diachinhan =
+          value.length < 10 ? "Nhập Chính Xác Địa Chỉ Muốn Nhận!" : "";
         break;
       default:
         break;
     }
+
+    this.setState({ errors, [name]: value }, () => {
+      console.log(errors);
+    });
   };
 
   render() {
     // console.log(JSON.parse(sessionStorage.getItem('TOKEN')));
-    let { id,diachinhan,phone,tennguoinhan,tinhtrang } = this.state;
-    let email = sessionStorage.getItem('TOKEN');
+    let { id, diachinhan, phone, tennguoinhan, tinhtrang, errors } = this.state;
+    let email = sessionStorage.getItem("TOKEN");
     let { cart } = this.props;
     let tongtien = this.total(cart);
     let date = new Date();
-    let cartapi ={
+    let cartapi = {
       email,
       diachinhan,
       phone,
       tennguoinhan,
-      ngaytao:date,
-      tinhtrang
-    }
+      ngaytao: date
+    };
     let bill = {
       id,
-      thongtin:cartapi,
+      thongtin: cartapi,
       cart,
-      tongtien
+      tongtien,
+      tinhtrang
     };
     return (
       <div id="thongtin_khachhang">
@@ -69,6 +77,8 @@ export class CartFormOrder extends Component {
           onChange={this.handleOnChange}
         />
         <br />
+        <span style={{color:'red'}}>{errors.tennguoinhan}</span>
+        <br />
         <label>Số điện thoại:</label>
         <input
           type="text"
@@ -77,6 +87,8 @@ export class CartFormOrder extends Component {
           name="phone"
         />
         <br />
+        <span style={{color:'red'}}>{errors.phone}</span>
+        <br />
         <label>Địa chỉ nhận:</label>
         <input
           type="text"
@@ -84,6 +96,8 @@ export class CartFormOrder extends Component {
           onChange={this.handleOnChange}
           name="diachinhan"
         />
+        <br />
+        <span style={{color:'red'}}>{errors.diachinhan}</span>
         <br />
         <label>&nbsp;</label>
         <input
@@ -95,12 +109,12 @@ export class CartFormOrder extends Component {
       </div>
     );
   }
-  
+
   addbill = sanpham => {
     // comfim('Mua Hàng Thành Công') //eslint-disable-line
     this.props.addbillapi(sanpham);
-    localStorage.removeItem('CART');
-    this.props.history.push('/')
+    localStorage.removeItem("CART");
+    this.props.history.push("/");
   };
   total = item => {
     var total = 0;

@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
 export class Header extends Component {
   render() {
     return (
-        <header>
-        <h3>
-          <Link to='/admin' >BK SHOP</Link>
-        </h3>
-        <div className="log_out">
-          <Link to='/admin'>Đăng xuất</Link>
+      <div className="container-fluid" style={{width:'100%'}}>
+        <div className="jumbotron">
+          <h1 className="display-3 text-center">BK Admin</h1>
+          <hr className="my-2" />
         </div>
-      </header>
-      
+      </div>
     );
   }
 }

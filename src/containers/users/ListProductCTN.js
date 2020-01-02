@@ -18,12 +18,11 @@ export class Product extends Component {
     return result;
   }
   render() {
-    // console.log(JSON.parse(localStorage.getItem('TOKEN')));
     var { listproduct } = this.props;
     return (
       <div className="product-box">
         <Home>
-          <div className="flex-box">{this.showProducts(listproduct)}</div>
+          <div className="flex-box row">{this.showProducts(listproduct)}</div>
         </Home>
       </div>
     );

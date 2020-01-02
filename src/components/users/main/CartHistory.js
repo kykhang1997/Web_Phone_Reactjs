@@ -1,34 +1,43 @@
 import React, { Component } from "react";
 import Moment from "react-moment";
+import NumberFormat from "react-number-format";
+
 export class CartHistory extends Component {
   render() {
     console.log(this.props.item);
     // console.log(this.props.index);
     let { item, index } = this.props;
-
+    var statusName = item.tinhtrang ? "Đã Chuyển" : "Chưa Nhận";
+    var statusClass = item.tinhtrang ? "warning" : "danger";
     return (
       <tr>
-        <td>{index + 1}</td>
-        <td>{item.thongtin.tennguoinhan}</td>
-        <td>{item.thongtin.phone}</td>
-        <td>{item.thongtin.diachinhan}</td>
-        <td>
-          <Moment date={item.thongtin.ngaytao} />
+        <td className="carthistory-td">{index + 1}</td>
+        <td className="carthistory-td">{item.thongtin.tennguoinhan}</td>
+        <td className="carthistory-td">{item.thongtin.phone}</td>
+        <td className="carthistory-td">{item.thongtin.diachinhan}</td>
+        <td className="carthistory-td">
+          <Moment format='DD/MM/YYYY' >{item.thongtin.ngaytao}</Moment>
         </td>
-        <td className='text-center'>
-          <td style={{width:'100%'}}>Tên Sản Phẩm</td>
-          <td>Số Lượng </td>
-          <td>Giá</td>
+        <td className="carthistory-td" >
+          <td className="carthistory-td" style={{width:'100%', bordertop: "1px solid #dee2e6"}}>Tên Sản Phẩm</td>
+          <td className="carthistory-td">Số Lượng </td>
+          <td className="carthistory-td">Giá</td>
           {this.showcart(item.cart)}
         </td>
-        <td>{item.tongtien}</td>
-        <td>{item.thongtin.tinhtrang}</td>
+        <td className="carthistory-td"><NumberFormat
+              value={item.tongtien}
+              displayType={"text"}
+              thousandSeparator={true}
+              renderText={value => value}
+            />
+            {""} VND</td>
+        <td className="carthistory-td">
+        <span className={`badge badge-pill badge-${statusClass}`}>
+              {statusName}
+            </span>
+        </td>
       </tr>
     );
-  }
-  showamount  = (count,price) => {
-      var result = count*price;
-      return result;
   }
   
   showcart = cart => {
@@ -37,9 +46,15 @@ export class CartHistory extends Component {
       result = cart.map((item, index) => {
         return (
           <tr key={index} style={{height:'100%'}}>
-            <td >{item.sanpham.tensp}</td>
-            <td>{item.count}</td>
-            <td>{this.showamount(item.count,item.sanpham.gia)}</td>
+            <td className="carthistory-td" >{item.sanpham.tensp}</td>
+            <td className="carthistory-td">{item.count}</td>
+            <td className="carthistory-td"><NumberFormat
+                value={item.count * item.sanpham.gia}
+                displayType={"text"}
+                thousandSeparator={true}
+                renderText={value => value}
+              />
+              {""} VND</td>
           </tr>
         );
       });

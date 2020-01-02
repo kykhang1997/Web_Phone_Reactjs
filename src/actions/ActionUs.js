@@ -16,6 +16,22 @@ export const actFetchProducts = (sanpham) => {
         sanpham
     }
 }
+export const GetCategoryAPI  = () => {
+    return dispatch => {
+        ApiCall(`loaisp`,'GET',null).then(res=>{
+            dispatch(getcategory(res.data))
+        })
+    }
+}
+
+
+export const getcategory  = (category) => {
+    return{
+        type: Types.GETCATEGORY,
+        category
+    }
+}
+
 
 //details dữ liệu
 export const actGetProductRequest  = (id) => {
@@ -148,5 +164,10 @@ export const seachProducts = (sanpham) => {
         sanpham
     }
 }
-
+//checklogin
+export const checklogin = () => {
+    return {
+        type : Types.CHECKLOGIN
+    }
+}
 

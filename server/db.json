@@ -17,22 +17,13 @@
       "re-pass": "123456"
     },
     {
-      "id": 2,
-      "name": "abc",
-      "email": "abc@gmail.com",
-      "phone": "0937264599",
-      "diachi": "06 Đào Nguyên Phổ , TP-Đà Nẵng",
-      "password": "123456",
-      "re-pass": "123456"
-    },
-    {
-      "id": 3,
       "name": "khang",
       "email": "khang@gmail.com",
       "password": "123456",
       "re_pass": "123456",
       "phone": "0937264599",
-      "diachi": "555dddddeeee"
+      "diachi": "123456abc",
+      "id": 2
     }
   ],
   "loaisp": [
@@ -44,223 +35,206 @@
     {
       "id": 2,
       "tenloai": "SamSung",
-      "tinhtrang": false
+      "tinhtrang": true
     },
     {
       "id": 3,
       "tenloai": "Oppo",
-      "tinhtrang": false
+      "tinhtrang": true
     },
     {
       "id": 4,
       "tenloai": "Nokia",
-      "tinhtrang": false
+      "tinhtrang": true
     }
   ],
   "sanpham": [
     {
       "id": 1,
       "tensp": "IPHONE 5 - 16GB",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/IPHONE_5_-_16GB_brpera.jpg",
       "giadexuat": 3000000,
       "giamgia": 0,
       "gia": 3000000,
-      "loaispId": 1,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/IPHONE_5_-_16GB_brpera.jpg",
-      "tinhtrang": true,
-      "noidung": "Được tặng balo trị giá 300.000đ"
+      "tenloaisp": "Iphone",
+      "noidung": "Được tặng balo trị giá 300.000đ",
+      "tinhtrang": true
     },
     {
       "id": 2,
       "tensp": "IPHONE 6 PLUS 32GB",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/IPHONE_6_PLUS_32GB_bdcfmx.jpg",
       "giadexuat": 7000000,
       "giamgia": 3,
       "gia": 6790000,
-      "loaispId": 1,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/IPHONE_6_PLUS_32GB_bdcfmx.jpg",
-      "tinhtrang": true,
-      "noidung": "Được tặng balo trị giá 300.000đ"
+      "tenloaisp": "Iphone",
+      "noidung": "Được tặng balo trị giá 300.000đ",
+      "tinhtrang": true
     },
     {
       "id": 3,
       "tensp": "IPHONE 7 128 GB",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068861/hinhanh/iphone_7_128gb_kfojqo.jpg",
       "giadexuat": 9000000,
       "giamgia": 3,
       "gia": 8730000,
-      "loaispId": 1,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068861/hinhanh/iphone_7_128gb_kfojqo.jpg",
-      "tinhtrang": false,
-      "noidung": "Được tặng balo trị giá 300.000đ"
+      "tenloaisp": "Iphone",
+      "noidung": "Được tặng balo trị giá 300.000đ",
+      "tinhtrang": true
     },
     {
       "id": 4,
       "tensp": "IPHONE 11 PRO MAX 256GB",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/iphone-11-pro-max-256gb_eykkg9.png",
       "giadexuat": 23000000,
       "giamgia": 0,
-      "gia": 902300000000,
-      "loaispId": 1,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/iphone-11-pro-max-256gb_eykkg9.png",
-      "tinhtrang": true,
-      "noidung": "Được tặng balo trị giá 300.000đ"
+      "gia": 23000000,
+      "tenloaisp": "Iphone",
+      "noidung": "Được tặng balo trị giá 300.000đ",
+      "tinhtrang": true
     },
     {
       "id": 5,
       "tensp": "SamSung-Galaxy-A30-32gb",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069226/hinhanh/SamSung-Galaxy-A30-32gb_v0mwf8.jpg",
       "giadexuat": 11000000,
       "giamgia": 0,
       "gia": 11000000,
-      "loaispId": 2,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069226/hinhanh/SamSung-Galaxy-A30-32gb_v0mwf8.jpg",
-      "tinhtrang": true,
-      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit"
+      "tenloaisp": "SamSung",
+      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit",
+      "tinhtrang": true
     },
     {
       "id": 6,
       "tensp": "SamSung-Galaxy-A50-32gb",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069226/hinhanh/samsung-galaxy-a50-128gb_ax4aqi.jpg",
       "giadexuat": 14000000,
       "giamgia": 0,
       "gia": 14000000,
-      "loaispId": 2,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069226/hinhanh/samsung-galaxy-a50-128gb_ax4aqi.jpg",
-      "tinhtrang": true,
-      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit"
+      "tenloaisp": "SamSung",
+      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit",
+      "tinhtrang": true
     },
     {
       "id": 7,
       "tensp": "Samsung-Galaxy-A9",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068862/hinhanh/samsung-galaxy-a9_x1poeq.jpg",
       "giadexuat": 12000000,
       "giamgia": 3,
       "gia": 11640000,
-      "loaispId": 2,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068862/hinhanh/samsung-galaxy-a9_x1poeq.jpg",
-      "tinhtrang": true,
-      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit"
+      "tenloaisp": "SamSung",
+      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit",
+      "tinhtrang": true
     },
     {
       "id": 8,
       "tensp": "Samsung-Galaxy-M20",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068863/hinhanh/samsung-galaxy-m20_ufkxnl.jpg",
       "giadexuat": 16000000,
       "giamgia": 3,
       "gia": 15520000,
-      "loaispId": 2,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068863/hinhanh/samsung-galaxy-m20_ufkxnl.jpg",
-      "tinhtrang": true,
-      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit"
+      "tenloaisp": "SamSung",
+      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit",
+      "tinhtrang": true
     },
     {
       "id": 9,
       "tensp": "SamSung-Galaxy-Note 10",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068863/hinhanh/SamSung-Galaxy-Note_10_sv2unt.jpg",
       "giadexuat": 17000000,
       "giamgia": 3,
-      "gia": 16150000,
-      "loaispId": 2,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068863/hinhanh/SamSung-Galaxy-Note_10_sv2unt.jpg",
-      "tinhtrang": true,
-      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit"
+      "gia": 16490000,
+      "tenloaisp": "SamSung",
+      "noidung": "khuyến mãi vòng đeo tay Galaxy Fit",
+      "tinhtrang": true
     },
     {
       "id": 10,
       "tensp": "OPPO A1",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068862/hinhanh/oppo-a1k_bly7xo.jpg",
       "giadexuat": 5000000,
       "giamgia": 1,
       "gia": 4950000,
-      "loaispId": 3,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068862/hinhanh/oppo-a1k_bly7xo.jpg",
-      "tinhtrang": true,
-      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu"
+      "tenloaisp": "Oppo",
+      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu",
+      "tinhtrang": true
     },
     {
       "id": 11,
       "tensp": "OPPO A3-32GB",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069224/hinhanh/oppo-a3s-32gb_tw4vww.png",
       "giadexuat": 4500000,
       "giamgia": 2,
       "gia": 4410000,
-      "loaispId": 3,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069224/hinhanh/oppo-a3s-32gb_tw4vww.png",
-      "tinhtrang": true,
-      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu"
+      "tenloaisp": "Oppo",
+      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu",
+      "tinhtrang": true
     },
     {
       "id": 12,
       "tensp": "OPPO F11 PRO",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069225/hinhanh/oppo-f11-pro_cfor2j.jpg",
       "giadexuat": 9000000,
       "giamgia": 6,
       "gia": 8460000,
-      "loaispId": 3,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069225/hinhanh/oppo-f11-pro_cfor2j.jpg",
-      "tinhtrang": true,
-      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu"
+      "tenloaisp": "Oppo",
+      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu",
+      "tinhtrang": true
     },
     {
       "id": 13,
       "tensp": "Oppo-R17",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069225/hinhanh/Oppo-R17_njaotm.jpg",
       "giadexuat": 10000000,
       "giamgia": 0,
       "gia": 10000000,
-      "loaispId": 3,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069225/hinhanh/Oppo-R17_njaotm.jpg",
-      "tinhtrang": true,
-      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu"
+      "tenloaisp": "Oppo",
+      "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu",
+      "tinhtrang": true
     },
     {
       "id": 14,
       "tensp": "NOKIA ASHA 206",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068863/hinhanh/asha206_fajl79.jpg",
       "giadexuat": 7039500,
       "giamgia": 0,
       "gia": 7039500,
-      "loaispId": 4,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068863/hinhanh/asha206_fajl79.jpg",
-      "tinhtrang": true,
-      "noidung": "Bảo hành chính hãng 12 tháng"
+      "tenloaisp": "Nokia",
+      "noidung": "Bảo hành chính hãng 12 tháng",
+      "tinhtrang": true
     },
     {
       "id": 15,
       "tensp": "NOKIA 130 - 2 SIM",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068861/hinhanh/NOKIA_130_-_2_SIM_izcuoi.jpg",
       "giadexuat": 500000,
       "giamgia": 7,
       "gia": 465000,
-      "loaispId": 4,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068861/hinhanh/NOKIA_130_-_2_SIM_izcuoi.jpg",
-      "tinhtrang": true,
-      "noidung": "Bảo hành chính hãng 12 tháng"
+      "tenloaisp": "Nokia",
+      "noidung": "Bảo hành chính hãng 12 tháng",
+      "tinhtrang": true
     },
     {
       "id": 16,
       "tensp": "NOKIA LUMIA 925",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068861/hinhanh/NOKIA_LUMIA_925_jpj9vb.jpg",
       "giadexuat": 1000000,
       "giamgia": 5,
       "gia": 950000,
-      "loaispId": 4,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068861/hinhanh/NOKIA_LUMIA_925_jpj9vb.jpg",
-      "tinhtrang": true,
-      "noidung": "Bảo hành chính hãng 12 tháng"
+      "tenloaisp": "Nokia",
+      "noidung": "Bảo hành chính hãng 12 tháng",
+      "tinhtrang": true
     },
     {
       "id": 17,
       "tensp": "NOKIA XL",
-      "soluong": 1,
+      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069224/hinhanh/NOKIA_XL_lbtryr.jpg",
       "giadexuat": 6000000,
       "giamgia": 4,
       "gia": 5760000,
-      "loaispId": 4,
-      "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069224/hinhanh/NOKIA_XL_lbtryr.jpg",
-      "tinhtrang": true,
-      "noidung": "Bảo hành chính hãng 12 tháng"
+      "tenloaisp": "Nokia",
+      "noidung": "Bảo hành chính hãng 12 tháng",
+      "tinhtrang": true
     }
   ],
   "thanhtoan": [
@@ -271,19 +245,17 @@
         "diachinhan": "2134",
         "phone": "4535",
         "tennguoinhan": "123",
-        "ngaytao": "2019-12-19T12:46:05.141Z",
-        "tinhtrang": ""
+        "ngaytao": "2019-12-19T12:46:05.141Z"
       },
       "cart": [
         {
           "sanpham": {
             "id": 2,
             "tensp": "IPHONE 6 PLUS 32GB",
-            "soluong": 1,
             "giadexuat": 7000000,
             "giamgia": 3,
             "gia": 6790000,
-            "loaispId": 1,
+            "tenloaisp": 1,
             "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576068860/hinhanh/IPHONE_6_PLUS_32GB_bdcfmx.jpg",
             "tinhtrang": true,
             "noidung": "Được tặng balo trị giá 300.000đ"
@@ -291,7 +263,36 @@
           "count": 1
         }
       ],
-      "tongtien": 6790000
+      "tongtien": 6790000,
+      "tinhtrang": true
+    },
+    {
+      "id": 3,
+      "thongtin": {
+        "email": "khang@gmail.com",
+        "diachinhan": "06 huỳnh ngọc huệ thành phố đà nẵng",
+        "phone": "0937264599",
+        "tennguoinhan": "khang",
+        "ngaytao": "2019-12-31T11:39:04.306Z"
+      },
+      "cart": [
+        {
+          "sanpham": {
+            "id": 12,
+            "tensp": "OPPO F11 PRO",
+            "hinhanh": "https://res.cloudinary.com/khangnguyen/image/upload/v1576069225/hinhanh/oppo-f11-pro_cfor2j.jpg",
+            "giadexuat": 9000000,
+            "giamgia": 6,
+            "gia": 8460000,
+            "tenloaisp": "3",
+            "noidung": "Thu cũ đổi mới OPPO F3 trợ giá đến 4,5 triệu",
+            "tinhtrang": true
+          },
+          "count": 1
+        }
+      ],
+      "tongtien": 8460000,
+      "tinhtrang": true
     }
   ]
 }

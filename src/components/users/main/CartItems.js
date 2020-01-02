@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import NumberFormat from "react-number-format";
+
+
 export class CartItems extends Component {
   render() {
     // console.log(this.props.delcart);
     let { sanpham, count } = this.props.item;
     return (
       <tr>
-        <td>
+        <td style={{width: "200px"}}>
           <img src={sanpham.hinhanh} alt="" className="img-fluid" />
         </td>
         <td>{sanpham.tensp}</td>
@@ -19,7 +21,7 @@ export class CartItems extends Component {
           />
           <sup>đ</sup>
         </td>
-        <td style={{ width: "20%",textAlign:'center' }} >
+        <td style={{ width: "20%"}} >
           
           <input
             className='btn btn-success'
@@ -57,8 +59,9 @@ export class CartItems extends Component {
   };
   del = sanpham => {
     if(sanpham){
-      confirm("Bạn Có Thật Sự Muốn Xoá ???"); //eslint-disable-line
-      this.props.delcart(sanpham);
+      if(confirm("Bạn Có Thật Sự Muốn Xoá ???")){//eslint-disable-line
+        this.props.delcart(sanpham);
+      }; 
     }
     
   };

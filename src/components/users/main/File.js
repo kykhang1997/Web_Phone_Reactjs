@@ -8,24 +8,24 @@ export class File extends Component {
       <table>
         <tbody>
           <tr>
-            <td>ID:</td>
-            <td>{item.id}</td>
+            <td className="file-item">ID:</td>
+            <td className="file-item">{item.id}</td>
           </tr>
           <tr>
-            <td>Tên:</td>
-            <td>{item.name}</td>
+            <td className="file-item">Tên:</td>
+            <td className="file-item">{item.name}</td>
           </tr>
           <tr>
-            <td>Email:</td>
-            <td>{item.email}</td>
+            <td className="file-item">Email:</td>
+            <td className="file-item">{item.email}</td>
           </tr>
           <tr>
-            <td>SĐT:</td>
-            <td>{item.phone}</td>
+            <td className="file-item">SĐT:</td>
+            <td className="file-item">{item.phone}</td>
           </tr>
           <tr>
-            <td>Địa chỉ:</td>
-            <td>{item.diachi}</td>
+            <td className="file-item">Địa chỉ:</td>
+            <td className="file-item">{item.diachi}</td>
           </tr>
         </tbody>
       </table>

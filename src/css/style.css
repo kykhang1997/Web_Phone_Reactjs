@@ -1,7 +1,4 @@
-*{
-	padding: 0;
-	margin: 0;
-}
+
 
 body{
 	width: 100%;
@@ -9,51 +6,7 @@ body{
 	background: #f3f5f7;
 }
 
-header{
-	width: 100%;
-	height: 35px;
-}
 
-header nav{
-	background-color: #a8cf45;
-    color: #ffffff;
-    height: 35px;
-}
-
-header ul{
-	list-style: none;
-	display: flex;
-	padding-left: 150px;
-	float: left;
-}
-
-header nav ul li{
-	line-height: 35px;
-	padding-left: 20px;
-}
-
-
-header nav ul li a{
-	border-right: 1px solid white;
-	padding-right: 20px;
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 14px;
-}
-
-header nav ul li a.active{
-	color: #ed3237;
-}
-
-header nav ul li a:hover{
-	color: #e10c00;
-	transition: 0.3s;
-}
-
-header nav .login_register{
-	float: right;
-	margin-right: 100px;
-}
 
 #header-content{
 	border: 1.5px solid #A5A4A4;
@@ -63,7 +16,7 @@ header nav .login_register{
 }
 
 #header-content img{
-	margin: 20px 0 0 150px;
+	margin: 8px 0 0 150px;
 	float: left;
 	margin-right: 80px;
 	clear: both;
@@ -84,7 +37,7 @@ header nav .login_register{
 	width: 90px;
 	height: 33px;
 	position: absolute;
-	margin-top: 20px;
+	margin-top: 18px;
 	border-radius: 2px;
 	background: #F89999;
 	border:1px solid #a8cf45;
@@ -99,7 +52,6 @@ header nav .login_register{
 
 
 .content{
-
 	clear: both;
 	width: 80%;
 	background: white;
@@ -122,9 +74,10 @@ header nav .login_register{
 
 .content .type a{
 	color: blue;
-	text-decoration: none;
-	border-right: 1px solid black;
-	padding-right: 6px;
+    text-decoration: none;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    margin-left: 10px;
 }
 
 .content .type a.active-type-all{
@@ -155,6 +108,18 @@ header nav .login_register{
 .content .type a:hover{
 	text-decoration: underline;
 }
+.linkapp{
+    margin-left: -31%;
+}
+.linkgiohang{
+	margin-left: -160%;
+}
+.linkprofile{
+	margin-left: -65%;
+}
+.nav-item1{
+	margin-top: 3%;
+}
 
  #product-box{
 	display: flex;
@@ -176,65 +141,54 @@ header nav .login_register{
 	transition: 0.2s;
 }
 
-.content .product-item img{
-	width: 180px;
+.product-item img{
+	width: 75%;
 	height: 220px;
 	padding-bottom: 10px;
+	margin: 5%;
 }
 
-.content .product-item img:hover{
+.product-item img:hover{
 	width: 190px;
 	transition: 0.3s;
 	opacity: 0.8;
 }
 
-.content .product-item{
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-	width: 240px;
-	margin: 10px;
+.product-item{
 	border: 1px solid #e3e3e3;
-	height: 330px;
-	
+	margin: 10px;
+}
+.action{
+	margin: 5%
 }
 
-
-.content .product-item .name{
+.name{
 	font-family: Roboto, sans-serif;
 	font-size: 13px;
 	padding-bottom: 10px;
 }
 
-.content .product-item .price{
+.price{
 	color: #e10c00;
 	font-weight: bold;
 	font-size: 13px;
 }
-
-.content .product-item .sale{
+ .sale{
 	background-color: #ed3237;
-    color: #fff;
-    font-size: 12px;
+	color: #fff;
+	font-size: 12px;
     font-weight: bold;
-    line-height: 31px;
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    transform: rotate(-45deg);
-    transition: all 0.5s linear 0s;
-    width: 137px;
-    right: 130px;
-    top:20px;
+	line-height: 31px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 25%;
+	top: 10%;
 }
 
 .content .product-item button{
-	width: 70px;
-	height: 30px;
-	margin-top: 10px;
-	background: white;
-	border: 1px solid #a8cf45;
-	font-size: 13px;
+    margin-top: 3px;
+    font-size: 13px;
 }
 
 .content .product-item button:hover{
@@ -438,4 +392,75 @@ footer-bottom{
 #form_login input{
 	margin-bottom: 10px;
 	height: 25px;
+}
+
+.dropbtn {
+    background-color: #343a40!important;
+    color: white;
+    font-size: 15px;
+	border: none;
+	margin-top: 7px;
+}
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  div#collapsibleNavbar {
+    margin-top: 12px;
+}
+@media only screen and (max-width:480px){
+	.content{
+		width: 100%;
+	}
+	.linkapp{
+		margin: 0;
+	}
+	.mobitext{
+		text-align: center;
+	}
+	.container-fluid{
+		max-width: 100%;
+	}
+	.login,.registration,.thongtin{
+		width: 100%!important
+	}
+	ul.ul_giohang,.linkgiohang,.linkprofile{
+		margin: 0;
+	}
+}
+@media only screen and (min-width:481px) and (max-width:575px){
+	ul.ul_giohang,.linkgiohang,.linkprofile{
+		margin: 0;
+	}
+	.linkapp{
+		margin: 0;
+	}
+}
+@media only screen and (min-width:481px) and (max-width:760px){
+	.login,.registration,.thongtin{
+		width: 100%!important
+	}
 }
